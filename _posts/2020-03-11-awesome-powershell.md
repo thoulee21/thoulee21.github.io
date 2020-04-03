@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  Awesome PowerShell
-date:   2020-03-11 00:16:32 +0800
-categories: update
+date:   2020-03-11
+tags: 
+  - PowerShell
+  - Microsoft
 ---
 # Awesome PowerShell [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
