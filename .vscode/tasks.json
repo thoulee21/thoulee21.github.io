@@ -1,0 +1,71 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Jekyll: Build html",
+            "type": "shell",
+            "command": "jekyll",
+            "options": {
+                "shell": {
+                    "executable": "wsl.exe"
+                }
+            },
+            "args": [
+                "build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Jekyll: Launch server",
+            "type": "shell",
+            "command": "bundle",
+            "options": {
+                "shell": {
+                    "executable": "wsl.exe"
+                }
+            },
+            "args": [
+                "exec",
+                "jekyll",
+                "serve"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Pandoc: Build file",
+            "type": "shell",
+            "command": "pandoc",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileBasenameNoExtension}.${input:fileType}"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        },
+    ],
+    "inputs": [
+        {
+            "type": "pickString",
+            "id": "fileType",
+            "description": "What type of file do you want to build?",
+            "options": [
+                "pdf",
+                "docx",
+                "ppt",
+                "html"
+            ],
+            "default": "pdf"
+        }
+    ]
+}
