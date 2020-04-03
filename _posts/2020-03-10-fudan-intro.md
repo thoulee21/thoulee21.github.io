@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "复旦大学简介"
-date:   2020-03-10 21:16:32 +0800
-categories: update
+date:   2020-03-10
+tags:
+    - study
 ---
 复旦大学
 ========

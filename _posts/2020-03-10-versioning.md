@@ -2,7 +2,9 @@
 layout: post
 title:  "语义化版本"
 date:   2020-03-10 21:16:32 +0800
-categories: coding
+tags:
+    - coding
+    - developer
 ---
 语义化版本 2.0.0
 ================

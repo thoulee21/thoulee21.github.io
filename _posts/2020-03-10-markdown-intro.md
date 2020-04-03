@@ -2,7 +2,8 @@
 layout: post
 title:  "Markdown 介绍"
 date:   2020-03-10 21:01:32 +0800
-categories: markdown
+tags: 
+  - markdown
 ---
 # 一份简明的 Markdown 笔记与教程
 **定义**：
