@@ -1,14 +1,14 @@
 {
-    "name": "hux-blog",
-    "title": "Hux Blog",
-    "author": "Hux <huxpro@gmail.com>",
+    "name": "thoulee-weblog",
+    "title": "thouLee's Weblog",
+    "author": "thouLee <thou_lee@outlook.com>",
     "version": "1.8.2",
-    "homepage": "http://huxpro.github.io",
+    "homepage": "https://thouworks.gitee.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Huxpro/huxpro.github.io"
+        "url": "https://gitee.com/ThouWorks/thouworks"
     },
-    "bugs": "https://github.com/Huxpro/huxpro.github.io/issues",
+    "bugs": "https://gitee.com/ThouWorks/thouworks/issues",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
@@ -17,7 +17,7 @@
         "grunt-contrib-uglify": "~0.5.1"
     },
     "scripts": {
-        "start" : "jekyll serve -w -l --host localhost --port 4000",
+        "start" : "jekyll serve -w -l",
         "dev"   : "grunt watch & npm run start",
         "push"  : "git push origin master --tag"
     }
