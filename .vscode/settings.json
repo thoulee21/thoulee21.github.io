@@ -4,6 +4,7 @@
         "huxpro",
         "idxxxx",
         "kramdown",
+        "mathjax",
         "pygments",
         "redcarpet"
     ]
