@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Python 元组(Tuple) 练习题 问卷"
+date:   2021-06-01 16:28:32 +0800
+tags:
+  - python
+---
 # Python 元组(Tuple) 练习题 **问卷**
 
 ## 1

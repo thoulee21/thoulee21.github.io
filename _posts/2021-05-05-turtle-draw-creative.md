@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "创新驱动成长"
+date:   2021-05-05 16:40:32 +0800
+tags:
+  - python
+  - python-draw
+  - 竞赛
+---
 # 创新驱动成长
 
 ## 1.主题阐释

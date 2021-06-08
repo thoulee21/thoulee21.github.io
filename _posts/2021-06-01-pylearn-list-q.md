@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Python 列表(list) 练习题 问卷"
+date:   2021-06-01 16:32:32 +0800
+tags:
+  - python
+---
 # Python 列表(list) 练习题 **问卷**
 ## 一、嘉宾名单
 
