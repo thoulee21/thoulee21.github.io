@@ -1,20 +1,19 @@
 ---
 layout: post
 title:  "Pandoc 介绍"
+subtitle: 格式转换界的 "瑞士军刀"
 date:   2020-03-10 21:13:32 +0800
 header-img: "img/post-bg-halting.jpg"
+catalog: true
+header-mask: 0.3
 tags: 
     - pandoc
     - markdown
 ---
-Pandoc
-------
 
 [Markdown](https://zh.wikipedia.org/zh-cn/Markdown) 是我平时编写各类材料和文章时最喜欢的工具之一，但将其作为文档分发时却略有些不便。毕竟不是所有人都了解
 Markdown
 的语法，而且它亦不如富文本文档易读。直至我发现了 [Pandoc](http://pandoc.org/)，它可以将文档在 Markdown、LaTeX、reStructuredText、HTML、Word docx 等多种标记格式之间相互转换，并支持输出 PDF、EPUB、HTML 幻灯片等多种格式。
-
-该程序被称为格式转换界的 "瑞士军刀"。
 
 程序简介
 --------

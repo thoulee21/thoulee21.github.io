@@ -2,12 +2,11 @@
 layout: post
 title:  "复旦大学简介"
 date:   2020-03-10
-header-img: "img/post-bg-universe.jpg"
+header-style: text 
+catalog: true
 tags:
     - study
 ---
-复旦大学
-========
 
 简介
 ----

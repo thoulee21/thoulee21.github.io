@@ -1,14 +1,13 @@
 ---
 layout: post
-title:  "语义化版本"
+title:  "语义化版本 2.0.0"
 date:   2020-03-10 21:16:32 +0800
 header-img: "img/post-bg-infinity.jpg"
+catalog: true
 tags:
     - coding
     - developer
 ---
-语义化版本 2.0.0
-================
 
 摘要
 ----

@@ -2,9 +2,12 @@
 layout: post
 title:  "Python 元组(Tuple) 练习题"
 date:   2021-06-01 16:27:32 +0800
-header-img: "img/post-bg-alitrip.jpg"
+author: thouLee
+header-style: text 
+catalog: true
 tags:
   - python
+  - study
 ---
 # Python 元组(Tuple) 练习题
 

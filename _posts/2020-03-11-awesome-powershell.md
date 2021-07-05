@@ -1,47 +1,18 @@
 ---
 layout: post
 title:  Awesome PowerShell
+subtitle: "A curated list of delightful PowerShell packages and resources"
 date:   2020-03-11  16:22:30 +0800
+author: sindresorhus
 header-img: "img/post-bg-kuaidi.jpg"
+catalog: true
 tags: 
   - PowerShell
   - Microsoft
 ---
-# Awesome PowerShell [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-
-[<img src="https://github.com/PowerShell/PowerShell/raw/master/assets/Powershell_256.png" align="right" width="80">](https://msdn.microsoft.com/en-us/powershell/)
-
-A curated list of delightful [PowerShell](https://en.wikipedia.org/wiki/PowerShell) packages and resources.
 
 PowerShell is a cross-platform (Windows, Linux, and macOS) automation and configuration tool that is optimized for dealing with structured data (e.g. JSON, CSV, XML, etc.), REST APIs, and object models.
 It includes a command-line shell and an associated scripting language.
-
-## Contents
-
-- [Awesome PowerShell ![Awesome](https://github.com/sindresorhus/awesome)](#awesome-powershell-img-srchttpsgithubcomsindresorhusawesome-altawesome)
-  - [Contents](#contents)
-  - [API Wrapper](#api-wrapper)
-  - [Blogs](#blogs)
-  - [Books](#books)
-  - [Build Tools](#build-tools)
-  - [Code and Package Repositories](#code-and-package-repositories)
-  - [Commandline Productivity](#commandline-productivity)
-  - [Communities](#communities)
-  - [Documentation Helper](#documentation-helper)
-  - [Editors and IDEs](#editors-and-ides)
-  - [Module Development Templates](#module-development-templates)
-  - [Frameworks](#frameworks)
-  - [Package Managers](#package-managers)
-  - [Parallel Processing](#parallel-processing)
-  - [Podcasts](#podcasts)
-  - [Security](#security)
-  - [Testing](#testing)
-  - [Themes](#themes)
-  - [Videos](#videos)
-  - [Webserver](#webserver)
-  - [SharePoint](#sharepoint)
-  - [SQL Server](#sql-server)
-  - [Misc](#misc)
 
 ## API Wrapper
 
@@ -61,7 +32,7 @@ It includes a command-line shell and an associated scripting language.
 
 * [Windows PowerShell Blog](https://blogs.msdn.microsoft.com/powershell/) - Official PowerShell Team Blog.
 * [Hey, Scripting Guy! Blog](http://blogs.technet.com/b/heyscriptingguy/) - Popular Microsoft blog.
-* [Learn Powershell | Achieve More](http://learn-powershell.net/) - Personal blog of Boe Prox who moderated for the Scripting Guy.
+* [Learn Powershell: Achieve More](http://learn-powershell.net/) - Personal blog of Boe Prox who moderated for the Scripting Guy.
 * [PowerShellMagazine](http://www.powershellmagazine.com/) - Awesome magazine.
 * [PowerShellExplained](https://powershellexplained.com) - Personal blog of Kevin Marquette
 * [Doug Finke](https://dfinke.github.io/#blog) - Author of [PowerShell for Developers](http://shop.oreilly.com/product/0636920024491.do).
