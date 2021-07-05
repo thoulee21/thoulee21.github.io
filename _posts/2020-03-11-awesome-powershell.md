@@ -2,6 +2,7 @@
 layout: post
 title:  Awesome PowerShell
 date:   2020-03-11  16:22:30 +0800
+header-img: "img/post-bg-kuaidi.jpg"
 tags: 
   - PowerShell
   - Microsoft

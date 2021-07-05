@@ -2,6 +2,7 @@
 layout: post
 title:  "Pandoc 介绍"
 date:   2020-03-10 21:13:32 +0800
+header-img: "img/post-bg-halting.jpg"
 tags: 
     - pandoc
     - markdown

@@ -5,7 +5,7 @@ date:   2021-05-05 16:40:32 +0800
 tags:
   - python
   - python-draw
-  - 竞赛
+  - competition
 ---
 # 创新驱动成长
 

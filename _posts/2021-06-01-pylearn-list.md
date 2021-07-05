@@ -2,6 +2,7 @@
 layout: post
 title:  "Python 列表(list) 练习题"
 date:   2021-06-01 16:30:32 +0800
+header-img: "img/post-bg-alitrip.jpg"
 tags:
   - python
 ---
