@@ -17,8 +17,9 @@
         "grunt-contrib-uglify": "~0.5.1"
     },
     "scripts": {
-        "start" : "jekyll serve -w -l",
-        "dev"   : "grunt watch & npm run start",
-        "push"  : "git push origin master --tag"
+        "start": "jekyll serve -w -l",
+        "dev": "grunt watch & npm run start",
+        "push": "git push origin master --tag",
+        "test": "jekyll build"
     }
 }
