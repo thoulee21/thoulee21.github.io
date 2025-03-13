@@ -1,5 +1,4 @@
-# Hexo Github Action for deploying Hexo to GitHub Pages
-name: Deploy
+name: Hexo Deployment
 
 on:
   push:
