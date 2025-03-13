@@ -2,8 +2,6 @@
 title: BEdit前端项目技术栈分析
 date: 2025-03-13 22:08:48
 categories:
-    - Next.js
-    - React
     - Repos
 tags:
     - Next.js

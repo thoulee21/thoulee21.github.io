@@ -2,9 +2,6 @@
 title: BEdit后端项目经历总结
 date: 2025-03-13 22:07:53
 categories:
-    - Flask
-    - AI
-    - DevOps
     - Repos
 tags:
     - Flask
