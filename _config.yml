@@ -103,7 +103,7 @@ theme: cupertino
 deploy:
   type: git
   repo: https://github.com/thoulee21/thoulee21.github.io.git
-  branch: main
+  branch: gh-pages
 
 search:
   path: search.json
