@@ -56,7 +56,10 @@ nav:
   # the items displays in the upper right corner
   items:
     # these items will display as a link
+    Blog: /
     Archives: /archives
+    Tags: /tags
+    Categories: /categories
     # Friends: /friends
     # Projects: /projects
     # About: /about
@@ -74,7 +77,7 @@ footer:
   Blog:
     # the items after the title, display as links
     Blog: /
-    # Archives: /archives
+    Archives: /archives
     Tags: /tags
     Categories: /categories
     Search: /search
