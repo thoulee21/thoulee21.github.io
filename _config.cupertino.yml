@@ -66,18 +66,18 @@ nav:
     # Patreon: https://www.patreon.com/MrWillCom
     # Mastodon: https://noc.social/@MrWillCom
     # Discord: https://discord.gg/UKuFDjcfY8
-    # Search: /search
+    Search: /search
 
 # footer items
 footer:
   # the title
-  # Blog:
+  Blog:
     # the items after the title, display as links
-    # Blog: /
+    Blog: /
     # Archives: /archives
-    # Tags: /tags
-    # Categories: /categories
-    # Search: /search
+    Tags: /tags
+    Categories: /categories
+    Search: /search
     # Friends: /friends
     # Projects: /projects
     # Resume: /resume
@@ -110,5 +110,5 @@ license_link: https://creativecommons.org/licenses/by-nc/4.0
 
 # search
 # based on [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
-# search: true
-# search_path: search.json
+search: true
+search_path: search.json
