@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>Joint Player 项目经验总结 - Matt Lee&#39;s Blog</title>
+  
+  
+
+  
+
+  
+<link rel="stylesheet" href="/css/var.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<link rel="stylesheet" href="/css/typography.css">
+
+  
+<link rel="stylesheet" href="/css/code-highlighting.css">
+
+  
+<link rel="stylesheet" href="/css/components.css">
+
+  
+<link rel="stylesheet" href="/css/nav.css">
+
+  
+<link rel="stylesheet" href="/css/paginator.css">
+
+  
+<link rel="stylesheet" href="/css/footer.css">
+
+  
+<link rel="stylesheet" href="/css/post-list.css">
+
+  
+  
+<link rel="stylesheet" href="/css/rainbow-banner.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/toc.css">
+
+  
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/post.css">
+
+  
+  
+  
+  
+  
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body
+        data-color-scheme="auto"
+        data-uppercase-categories="true"
+        
+        data-rainbow-banner="true"
+        data-rainbow-banner-shown="auto"
+        data-rainbow-banner-month="6"
+        data-rainbow-banner-colors="#e50000,#ff8d00,#ffee00,#008121,#004cff,#760188"
+        
+        data-config-root="/"
+        
+        data-toc="true"
+        data-toc-max-depth="2"
+        
+        
+    >
+        <nav id="theme-nav">
+    <div class="inner">
+        <a class="title" href="/">Matt Lee&#39;s Blog</a>
+        <div class="nav-arrow"></div>
+        <div class="nav-items">
+            <a class="nav-item nav-item-home" href="/">主页</a>
+            
+            
+            <a class="nav-item" href="/archives">Archives</a>
+            
+            
+            
+            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/thoulee21" target="_blank" aria-label="GitHub">&nbsp;</a>
+            
+            
+            
+            <a class="nav-item nav-item-search nav-item-icon" href="/search" target="_blank" aria-label="Search">&nbsp;</a>
+            
+            
+        </div>
+    </div>
+</nav>
+        
+<article class="post">
+    <div class="meta">
+        
+        <div class="categories text-uppercase">
+        
+            <a href="/categories/Repos/">Repos</a>
+        
+        </div>
+        
+
+        
+        <div class="date" id="date">
+            <span>March</span>
+            <span>13,</span>
+            <span>2025</span>
+        </div>
+        
+
+        <h1 class="title">Joint Player 项目经验总结</h1>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="content">
+        <h1 id="Joint-Player-项目经验总结"><a href="#Joint-Player-项目经验总结" class="headerlink" title="Joint Player 项目经验总结"></a>Joint Player 项目经验总结</h1><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><h3 id="前端框架与核心技术"><a href="#前端框架与核心技术" class="headerlink" title="前端框架与核心技术"></a>前端框架与核心技术</h3><ul>
+<li><strong>React Native 0.75.4</strong>: 跨平台移动应用开发</li>
+<li><strong>Redux&#x2F;RTK</strong>: 使用@reduxjs&#x2F;toolkit和redux-persist进行状态管理和持久化</li>
+<li><strong>React Navigation</strong>: 实现应用路由与导航功能</li>
+<li><strong>SWR</strong>: 用于数据获取、缓存和状态同步</li>
+</ul>
+<h3 id="UI与交互"><a href="#UI与交互" class="headerlink" title="UI与交互"></a>UI与交互</h3><ul>
+<li><strong>React Native Paper</strong>: Material Design风格的UI组件库</li>
+<li><strong>React Native Reanimated</strong>: 高性能动画系统</li>
+<li><strong>React Native Gesture Handler</strong>: 手势控制系统</li>
+</ul>
+<h3 id="多媒体处理"><a href="#多媒体处理" class="headerlink" title="多媒体处理"></a>多媒体处理</h3><ul>
+<li><strong>React Native Track Player</strong>: 音频播放控制，支持后台播放</li>
+<li><strong>React Native Video</strong>: 视频播放功能</li>
+</ul>
+<h3 id="存储与性能"><a href="#存储与性能" class="headerlink" title="存储与性能"></a>存储与性能</h3><ul>
+<li><strong>MMKV</strong>: 高性能键值存储</li>
+<li><strong>Expo</strong>: 部分模块使用Expo库简化开发</li>
+</ul>
+<h3 id="其他技术"><a href="#其他技术" class="headerlink" title="其他技术"></a>其他技术</h3><ul>
+<li><strong>i18next</strong>: 国际化多语言支持</li>
+<li><strong>Sentry</strong>: 错误监控与追踪</li>
+<li><strong>Jest</strong>: 单元测试</li>
+</ul>
+<h2 id="技术难点及解决方案"><a href="#技术难点及解决方案" class="headerlink" title="技术难点及解决方案"></a>技术难点及解决方案</h2><h3 id="1-高性能缓存系统实现"><a href="#1-高性能缓存系统实现" class="headerlink" title="1. 高性能缓存系统实现"></a>1. 高性能缓存系统实现</h3><ul>
+<li><strong>难点</strong>: 移动应用需要高效管理大量音乐数据和API响应的缓存</li>
+<li><strong>解决方案</strong>: <ul>
+<li>开发了基于MMKV的自定义缓存系统，实现<code>MMKVStorageProvider</code>类</li>
+<li>采用LRU(最近最少使用)缓存淘汰策略</li>
+<li>针对不同类型数据实现了优先级缓存机制</li>
+<li>通过缓存事件系统支持数据自动重载</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-音频播放与控制优化"><a href="#2-音频播放与控制优化" class="headerlink" title="2. 音频播放与控制优化"></a>2. 音频播放与控制优化</h3><ul>
+<li><strong>难点</strong>: 需要实现高质量的音频播放体验，包括后台播放与系统集成</li>
+<li><strong>解决方案</strong>:<ul>
+<li>封装<code>TrackPlayer</code>服务，实现自动队列恢复</li>
+<li>自定义<code>useSetupPlayer</code>Hook处理播放器初始化和状态恢复</li>
+<li>实现了歌词同步显示和滚动功能</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-性能优化与用户体验"><a href="#3-性能优化与用户体验" class="headerlink" title="3. 性能优化与用户体验"></a>3. 性能优化与用户体验</h3><ul>
+<li><strong>难点</strong>: 移动应用需要在性能有限的设备上保持流畅体验</li>
+<li><strong>解决方案</strong>:<ul>
+<li>实现<code>useThrottle</code>和<code>useDebounce</code>自定义Hooks控制高频函数调用</li>
+<li>通过<code>initFocus</code>机制处理应用状态转换和数据同步</li>
+<li>使用批处理策略优化渲染和状态更新</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-API集成与网络优化"><a href="#4-API集成与网络优化" class="headerlink" title="4. API集成与网络优化"></a>4. API集成与网络优化</h3><ul>
+<li><strong>难点</strong>: 需要稳定集成第三方音乐API并处理网络波动</li>
+<li><strong>解决方案</strong>:<ul>
+<li>开发了<code>fetchPlus</code>和<code>retryFetcher</code>工具，实现自动重试和错误恢复</li>
+<li>通过SWR实现数据缓存和快速响应</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-版本管理自动化"><a href="#5-版本管理自动化" class="headerlink" title="5. 版本管理自动化"></a>5. 版本管理自动化</h3><ul>
+<li><strong>难点</strong>: 需要高效管理应用版本号和构建流程</li>
+<li><strong>解决方案</strong>:<ul>
+<li>实现了版本号自动递增系统</li>
+<li>开发了针对Android和iOS平台的构建脚本</li>
+</ul>
+</li>
+</ul>
+<h2 id="项目成果"><a href="#项目成果" class="headerlink" title="项目成果"></a>项目成果</h2><ul>
+<li>成功开发了一个支持多平台的音乐播放器应用</li>
+<li>实现了稳定的音乐播放、歌词同步和多语言支持功能</li>
+<li>通过性能优化和缓存策略，提供了流畅的用户体验</li>
+</ul>
+
+    </div>
+
+    
+    <div class="about">
+        <h1>关于本文</h1>
+        <div class="details">
+            <p>由 Matt Lee 撰写, 采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0</a> 许可协议.</p>
+        </div>
+        
+        <p class="tags">
+            
+            <i class="icon"></i>
+            <a href="/tags/React-Native/" class="tag">#React Native</a><a href="/tags/Redux/" class="tag">#Redux</a><a href="/tags/Expo/" class="tag">#Expo</a><a href="/tags/i18next/" class="tag">#i18next</a><a href="/tags/Sentry/" class="tag">#Sentry</a><a href="/tags/SWR/" class="tag">#SWR</a><a href="/tags/MMKV/" class="tag">#MMKV</a>
+        </p>
+        
+    </div>
+    
+
+    <div class="container post-prev-next">
+        
+        <a href="/2025/03/13/jy-web/" class="next">
+            <div>
+                <div class="text">
+                    <p class="label">下一篇</p>
+                    <h3 class="title">君颖投资项目经历简介</h3>
+                </div>
+            </div>
+        </a>
+        
+        
+        <a href="/2025/03/13/imgv-web/" class="prev">
+            <div>
+                <div class="text">
+                    <p class="label">上一篇</p>
+                    <h3 class="title">imgv-webapp项目经历总结</>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+
+    
+        
+        
+    
+</article>
+
+        <footer>
+    <div class="inner">
+        <div class="links">
+            
+            <div class="group">
+                <h2 class="title">Blog</h2>
+                
+                <a href="/" class="item">Blog</a>
+                
+                <a href="/tags" class="item">Tags</a>
+                
+                <a href="/categories" class="item">Categories</a>
+                
+                <a href="/search" class="item">Search</a>
+                
+            </div>
+            
+            <div class="group">
+                <h2 class="title">Me</h2>
+                
+                <a target="_blank" rel="noopener" href="https://github.com/thoulee21" class="item">GitHub</a>
+                
+                <a href="mailto:thou_lee@outlook.com" class="item">Email</a>
+                
+            </div>
+            
+        </div>
+        <span>&copy; 2025 Matt Lee<br>由 <a href="http://hexo.io/" target="_blank">Hexo</a> 驱动 </span>
+        
+        
+            <br>
+            <div class="color-scheme-toggle" role="radiogroup" id="theme-color-scheme-toggle">
+                <label>
+                    <input type="radio" value="light">
+                    <span>Light</span>
+                </label>
+                <label>
+                    <input type="radio" value="dark">
+                    <span>Dark</span>
+                </label>
+                <label>
+                    <input type="radio" value="auto">
+                    <span>Auto</span>
+                </label>
+            </div>
+        
+    </div>
+</footer>
+
+
+        
+<script src="/js/main.js"></script>
+
+        
+        
+        
+
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            window.addEventListener('load', () => {
+                ScrollReveal({ delay: 250, reset: true, easing: 'cubic-bezier(0, 0, 0, 1)' })
+                ScrollReveal().reveal('.post-list-item .cover-img img')
+                ScrollReveal().reveal('.post-list-item, .card, .content p img, .content .block-large img', { distance: '60px', origin: 'bottom', duration: 800 })
+            })
+        </script>
+        
+    </body>
+</html>

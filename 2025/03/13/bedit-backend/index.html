@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>BEdit后端项目经历总结 - Matt Lee&#39;s Blog</title>
+  
+  
+
+  
+
+  
+<link rel="stylesheet" href="/css/var.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<link rel="stylesheet" href="/css/typography.css">
+
+  
+<link rel="stylesheet" href="/css/code-highlighting.css">
+
+  
+<link rel="stylesheet" href="/css/components.css">
+
+  
+<link rel="stylesheet" href="/css/nav.css">
+
+  
+<link rel="stylesheet" href="/css/paginator.css">
+
+  
+<link rel="stylesheet" href="/css/footer.css">
+
+  
+<link rel="stylesheet" href="/css/post-list.css">
+
+  
+  
+<link rel="stylesheet" href="/css/rainbow-banner.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/toc.css">
+
+  
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/post.css">
+
+  
+  
+  
+  
+  
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+    <body
+        data-color-scheme="auto"
+        data-uppercase-categories="true"
+        
+        data-rainbow-banner="true"
+        data-rainbow-banner-shown="auto"
+        data-rainbow-banner-month="6"
+        data-rainbow-banner-colors="#e50000,#ff8d00,#ffee00,#008121,#004cff,#760188"
+        
+        data-config-root="/"
+        
+        data-toc="true"
+        data-toc-max-depth="2"
+        
+        
+    >
+        <nav id="theme-nav">
+    <div class="inner">
+        <a class="title" href="/">Matt Lee&#39;s Blog</a>
+        <div class="nav-arrow"></div>
+        <div class="nav-items">
+            <a class="nav-item nav-item-home" href="/">主页</a>
+            
+            
+            <a class="nav-item" href="/archives">Archives</a>
+            
+            
+            
+            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/thoulee21" target="_blank" aria-label="GitHub">&nbsp;</a>
+            
+            
+            
+            <a class="nav-item nav-item-search nav-item-icon" href="/search" target="_blank" aria-label="Search">&nbsp;</a>
+            
+            
+        </div>
+    </div>
+</nav>
+        
+<article class="post">
+    <div class="meta">
+        
+        <div class="categories text-uppercase">
+        
+            <a href="/categories/Repos/">Repos</a>
+        
+        </div>
+        
+
+        
+        <div class="date" id="date">
+            <span>March</span>
+            <span>13,</span>
+            <span>2025</span>
+        </div>
+        
+
+        <h1 class="title">BEdit后端项目经历总结</h1>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="content">
+        <h1 id="BEdit后端项目经历总结"><a href="#BEdit后端项目经历总结" class="headerlink" title="BEdit后端项目经历总结"></a>BEdit后端项目经历总结</h1><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ol>
+<li><p><strong>核心框架与库</strong></p>
+<ul>
+<li>Flask - 构建Web API服务</li>
+<li>erniebot - 集成百度文心一言AI模型</li>
+<li>PaddleOCR - 实现图像文字识别功能</li>
+<li>MongoDB - 数据存储</li>
+</ul>
+</li>
+<li><p><strong>部署与运维</strong></p>
+<ul>
+<li>PDM - Python项目依赖管理</li>
+<li>Waitress - 生产环境WSGI服务器</li>
+<li>GitHub Actions - CI&#x2F;CD自动化部署</li>
+</ul>
+</li>
+<li><p><strong>工具库</strong></p>
+<ul>
+<li>Loguru - 日志管理系统</li>
+<li>Flask-CORS - 处理跨域资源共享</li>
+<li>pytoml - 项目配置管理</li>
+</ul>
+</li>
+</ol>
+<h2 id="技术难点"><a href="#技术难点" class="headerlink" title="技术难点"></a>技术难点</h2><ol>
+<li><p><strong>AI大模型集成</strong></p>
+<ul>
+<li>难点：接入百度文心一言API，实现智能对话功能</li>
+<li>解决方法：采用erniebot库封装API调用，实现流式和非流式响应处理，并使用初始化消息列表确保模型身份一致性</li>
+</ul>
+</li>
+<li><p><strong>OCR图像识别</strong></p>
+<ul>
+<li>难点：需从图片中提取文字内容，支持多语种识别</li>
+<li>解决方法：集成PaddleOCR库，封装识别流程，实现高效的图文转换API</li>
+</ul>
+</li>
+<li><p><strong>异步流式响应</strong></p>
+<ul>
+<li>难点：实现AI模型的实时流式输出，提升用户交互体验</li>
+<li>解决方法：使用Flask的stream_with_context和生成器函数，结合erniebot的流式接口实现数据流输出</li>
+</ul>
+</li>
+<li><p><strong>数据持久化</strong></p>
+<ul>
+<li>难点：聊天历史记录需要高效存储与检索</li>
+<li>解决方法：设计封装MongoDB操作的DBHandler类，实现通用数据增删改查功能</li>
+</ul>
+</li>
+<li><p><strong>日志系统集成</strong></p>
+<ul>
+<li>难点：统一多个库的日志记录行为，便于问题排查</li>
+<li>解决方法：使用Loguru配置统一日志格式，通过InterceptHandler拦截并重定向标准日志输出</li>
+</ul>
+</li>
+<li><p><strong>自动化部署</strong></p>
+<ul>
+<li>难点：简化部署流程，确保版本一致性</li>
+<li>解决方法：配置GitHub Actions工作流，使用SSH远程命令实现代码拉取、依赖安装和服务重启</li>
+</ul>
+</li>
+</ol>
+<p>这个项目综合运用了Web开发、AI模型集成和DevOps实践，构建了一个具备智能对话和OCR功能的后端服务，为富文本编辑器提供AI增强能力。</p>
+
+    </div>
+
+    
+    <div class="about">
+        <h1>关于本文</h1>
+        <div class="details">
+            <p>由 Matt Lee 撰写, 采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0</a> 许可协议.</p>
+        </div>
+        
+        <p class="tags">
+            
+            <i class="icon"></i>
+            <a href="/tags/AI/" class="tag">#AI</a><a href="/tags/Flask/" class="tag">#Flask</a><a href="/tags/OCR/" class="tag">#OCR</a><a href="/tags/DevOps/" class="tag">#DevOps</a>
+        </p>
+        
+    </div>
+    
+
+    <div class="container post-prev-next">
+        
+        <a href="/2025/03/13/bedit-frontend/" class="next">
+            <div>
+                <div class="text">
+                    <p class="label">下一篇</p>
+                    <h3 class="title">BEdit前端项目技术栈分析</h3>
+                </div>
+            </div>
+        </a>
+        
+        
+        <a href="/2025/03/13/aichat-backend/" class="prev">
+            <div>
+                <div class="text">
+                    <p class="label">上一篇</p>
+                    <h3 class="title">Go语言AI聊天机器人项目技术总结</>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+
+    
+        
+        
+    
+</article>
+
+        <footer>
+    <div class="inner">
+        <div class="links">
+            
+            <div class="group">
+                <h2 class="title">Blog</h2>
+                
+                <a href="/" class="item">Blog</a>
+                
+                <a href="/tags" class="item">Tags</a>
+                
+                <a href="/categories" class="item">Categories</a>
+                
+                <a href="/search" class="item">Search</a>
+                
+            </div>
+            
+            <div class="group">
+                <h2 class="title">Me</h2>
+                
+                <a target="_blank" rel="noopener" href="https://github.com/thoulee21" class="item">GitHub</a>
+                
+                <a href="mailto:thou_lee@outlook.com" class="item">Email</a>
+                
+            </div>
+            
+        </div>
+        <span>&copy; 2025 Matt Lee<br>由 <a href="http://hexo.io/" target="_blank">Hexo</a> 驱动 </span>
+        
+        
+            <br>
+            <div class="color-scheme-toggle" role="radiogroup" id="theme-color-scheme-toggle">
+                <label>
+                    <input type="radio" value="light">
+                    <span>Light</span>
+                </label>
+                <label>
+                    <input type="radio" value="dark">
+                    <span>Dark</span>
+                </label>
+                <label>
+                    <input type="radio" value="auto">
+                    <span>Auto</span>
+                </label>
+            </div>
+        
+    </div>
+</footer>
+
+
+        
+<script src="/js/main.js"></script>
+
+        
+        
+        
+
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            window.addEventListener('load', () => {
+                ScrollReveal({ delay: 250, reset: true, easing: 'cubic-bezier(0, 0, 0, 1)' })
+                ScrollReveal().reveal('.post-list-item .cover-img img')
+                ScrollReveal().reveal('.post-list-item, .card, .content p img, .content .block-large img', { distance: '60px', origin: 'bottom', duration: 800 })
+            })
+        </script>
+        
+    </body>
+</html>
