@@ -104,6 +104,7 @@ deploy:
   type: git
   repo: git@github.com:thoulee21/thoulee21.github.io.git
   branch: gh-pages
+  token: $GH_TOKEN
 
 search:
   path: search.json
