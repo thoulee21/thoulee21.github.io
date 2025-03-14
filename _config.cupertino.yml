@@ -56,7 +56,6 @@ nav:
   # the items displays in the upper right corner
   items:
     # these items will display as a link
-    Home: /
     Archives: /archives
     Tags: /tags
     Categories: /categories
