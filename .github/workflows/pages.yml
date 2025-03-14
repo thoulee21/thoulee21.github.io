@@ -1,0 +1,26 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deployments
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+            submodules: true
+            fetch-depth: 0
+      - name: Install node modules
+        run: npm install
+      - name: Deploy to GitHub Pages
+        run: npm run deploy:pages
+            
