@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   
-  <title>NeteaseCmd 项目经历总结 - Blog</title>
+  <title>BEdit后端项目经历总结 - Blog</title>
   
     <link rel="shortcut icon" href="/favicon.png">
   
@@ -14,15 +14,15 @@
   
   
   
-  <meta property="og:title" content="NeteaseCmd 项目经历总结 - Blog" />
+  <meta property="og:title" content="BEdit后端项目经历总结 - Blog" />
   
   <meta property="og:type" content="article" />
   
-  <meta property="og:url" content="https://thoulee21.github.io/2025/03/13/netease-cmd/index.html" />
+  <meta property="og:url" content="https://thoulee21.github.io/2025/03/13/repos/bedit-backend/index.html" />
   
   <meta property="og:image" content="/favicon.png" />
   
-  <meta property="og:article:published_time" content="2025-03-13T14:31:28.000Z" />
+  <meta property="og:article:published_time" content="2025-03-13T14:07:53.000Z" />
   
   <meta property="og:article:author" content="Matt Lee" />
   
@@ -152,77 +152,75 @@
         </div>
         
 
-        <h1 class="title">NeteaseCmd 项目经历总结</h1>
+        <h1 class="title">BEdit后端项目经历总结</h1>
     </div>
 
     <div class="divider"></div>
 
     <div class="content">
-        <h1 id="网易云音乐命令行客户端项目经历总结"><a href="#网易云音乐命令行客户端项目经历总结" class="headerlink" title="网易云音乐命令行客户端项目经历总结"></a>网易云音乐命令行客户端项目经历总结</h1><h2 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h2><p>NeteaseCmd 是一个功能丰富的网易云音乐命令行客户端，支持音乐搜索下载、歌单管理、MV下载、评论查看等功能，同时实现了完整的用户权限管理系统。</p>
-<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><h3 id="后端与核心技术"><a href="#后端与核心技术" class="headerlink" title="后端与核心技术"></a>后端与核心技术</h3><ul>
-<li><strong>Python</strong> 作为主要开发语言</li>
-<li><strong>CMD模块扩展</strong> 实现交互式命令行界面</li>
-<li><strong>MongoDB</strong> 用于数据持久化存储（用户账户、日志、搜索历史等）</li>
-<li><strong>RESTful API</strong> 对接网易云音乐非官方API</li>
-<li><strong>PDM</strong> 用于依赖管理</li>
-</ul>
-<h3 id="工具库"><a href="#工具库" class="headerlink" title="工具库"></a>工具库</h3><ul>
-<li><strong>requests</strong> 处理HTTP请求</li>
-<li><strong>rich</strong> 实现丰富的命令行UI（表格、进度条等）</li>
-<li><strong>colorama</strong> 提供彩色终端输出</li>
-<li><strong>loguru</strong> 实现结构化日志</li>
-<li><strong>SnowNLP</strong> 进行自然语言处理和情感分析</li>
-<li><strong>PyYAML</strong> 处理配置文件</li>
-</ul>
-<h2 id="技术难点与解决方案"><a href="#技术难点与解决方案" class="headerlink" title="技术难点与解决方案"></a>技术难点与解决方案</h2><h3 id="1-网易云音乐API调用与稳定性"><a href="#1-网易云音乐API调用与稳定性" class="headerlink" title="1. 网易云音乐API调用与稳定性"></a>1. 网易云音乐API调用与稳定性</h3><ul>
-<li><strong>难点</strong>：网易云API缺乏官方文档，接口可能不稳定</li>
-<li><strong>解决方案</strong>：<ul>
-<li>实现WebAPICheck系统进行接口健康检查</li>
-<li>设计自动禁用不可用API机制</li>
-<li>自定义异常处理机制捕获API错误</li>
+        <h1 id="BEdit后端项目经历总结"><a href="#BEdit后端项目经历总结" class="headerlink" title="BEdit后端项目经历总结"></a>BEdit后端项目经历总结</h1><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ol>
+<li><p><strong>核心框架与库</strong></p>
+<ul>
+<li>Flask - 构建Web API服务</li>
+<li>erniebot - 集成百度文心一言AI模型</li>
+<li>PaddleOCR - 实现图像文字识别功能</li>
+<li>MongoDB - 数据存储</li>
 </ul>
 </li>
-</ul>
-<h3 id="2-权限与安全系统设计"><a href="#2-权限与安全系统设计" class="headerlink" title="2. 权限与安全系统设计"></a>2. 权限与安全系统设计</h3><ul>
-<li><strong>难点</strong>：需要细粒度的用户权限控制，保护敏感操作</li>
-<li><strong>解决方案</strong>：<ul>
-<li>设计基于角色(admin&#x2F;user&#x2F;visitor)的权限系统</li>
-<li>实现权限分组(basic&#x2F;music&#x2F;user&#x2F;accounting)</li>
-<li>使用SHA-256哈希算法存储密码</li>
-<li>命令执行前的权限预检查机制</li>
+<li><p><strong>部署与运维</strong></p>
+<ul>
+<li>PDM - Python项目依赖管理</li>
+<li>Waitress - 生产环境WSGI服务器</li>
+<li>GitHub Actions - CI&#x2F;CD自动化部署</li>
 </ul>
 </li>
-</ul>
-<h3 id="3-命令行交互优化"><a href="#3-命令行交互优化" class="headerlink" title="3. 命令行交互优化"></a>3. 命令行交互优化</h3><ul>
-<li><strong>难点</strong>：命令行界面交互体验通常较差</li>
-<li><strong>解决方案</strong>：<ul>
-<li>扩展Python cmd模块，增强命令行功能</li>
-<li>实现命令自动补全系统</li>
-<li>使用rich库展示结构化表格数据</li>
-<li>设计多层命令模式(管理员模式、用户模式)</li>
+<li><p><strong>工具库</strong></p>
+<ul>
+<li>Loguru - 日志管理系统</li>
+<li>Flask-CORS - 处理跨域资源共享</li>
+<li>pytoml - 项目配置管理</li>
 </ul>
 </li>
-</ul>
-<h3 id="4-数据持久化与备份"><a href="#4-数据持久化与备份" class="headerlink" title="4. 数据持久化与备份"></a>4. 数据持久化与备份</h3><ul>
-<li><strong>难点</strong>：本地数据易丢失，需要可靠备份</li>
-<li><strong>解决方案</strong>：<ul>
-<li>设计云端自动备份系统</li>
-<li>实现增量数据上传</li>
-<li>使用MongoDB实现数据跨设备同步</li>
-</ul>
-</li>
-</ul>
-<h3 id="5-用户体验增强功能"><a href="#5-用户体验增强功能" class="headerlink" title="5. 用户体验增强功能"></a>5. 用户体验增强功能</h3><ul>
-<li><strong>难点</strong>：提高命令行应用的用户友好度</li>
-<li><strong>解决方案</strong>：<ul>
-<li>实现下载进度可视化</li>
-<li>使用NLP技术分析音乐评论情感</li>
-<li>设计记忆化搜索历史功能</li>
-<li>日志系统集成Slack通知</li>
+</ol>
+<h2 id="技术难点"><a href="#技术难点" class="headerlink" title="技术难点"></a>技术难点</h2><ol>
+<li><p><strong>AI大模型集成</strong></p>
+<ul>
+<li>难点：接入百度文心一言API，实现智能对话功能</li>
+<li>解决方法：采用erniebot库封装API调用，实现流式和非流式响应处理，并使用初始化消息列表确保模型身份一致性</li>
 </ul>
 </li>
+<li><p><strong>OCR图像识别</strong></p>
+<ul>
+<li>难点：需从图片中提取文字内容，支持多语种识别</li>
+<li>解决方法：集成PaddleOCR库，封装识别流程，实现高效的图文转换API</li>
 </ul>
-<h2 id="项目收获"><a href="#项目收获" class="headerlink" title="项目收获"></a>项目收获</h2><p>通过此项目，深入掌握了Python高级特性、命令行应用设计模式、MongoDB数据存储技术，以及RESTful API对接技巧。特别是在权限管理、用户认证和命令行交互体验优化方面积累了丰富经验。</p>
+</li>
+<li><p><strong>异步流式响应</strong></p>
+<ul>
+<li>难点：实现AI模型的实时流式输出，提升用户交互体验</li>
+<li>解决方法：使用Flask的stream_with_context和生成器函数，结合erniebot的流式接口实现数据流输出</li>
+</ul>
+</li>
+<li><p><strong>数据持久化</strong></p>
+<ul>
+<li>难点：聊天历史记录需要高效存储与检索</li>
+<li>解决方法：设计封装MongoDB操作的DBHandler类，实现通用数据增删改查功能</li>
+</ul>
+</li>
+<li><p><strong>日志系统集成</strong></p>
+<ul>
+<li>难点：统一多个库的日志记录行为，便于问题排查</li>
+<li>解决方法：使用Loguru配置统一日志格式，通过InterceptHandler拦截并重定向标准日志输出</li>
+</ul>
+</li>
+<li><p><strong>自动化部署</strong></p>
+<ul>
+<li>难点：简化部署流程，确保版本一致性</li>
+<li>解决方法：配置GitHub Actions工作流，使用SSH远程命令实现代码拉取、依赖安装和服务重启</li>
+</ul>
+</li>
+</ol>
+<p>这个项目综合运用了Web开发、AI模型集成和DevOps实践，构建了一个具备智能对话和OCR功能的后端服务，为富文本编辑器提供AI增强能力。</p>
 
     </div>
 
@@ -236,7 +234,7 @@
         <p class="tags">
             
             <i class="icon"></i>
-            <a href="/tags/Python/" class="tag">#Python</a><a href="/tags/MongoDB/" class="tag">#MongoDB</a><a href="/tags/RESTful-API/" class="tag">#RESTful API</a><a href="/tags/CLI/" class="tag">#CLI</a><a href="/tags/User-Management/" class="tag">#User Management</a>
+            <a href="/tags/Flask/" class="tag">#Flask</a><a href="/tags/AI/" class="tag">#AI</a><a href="/tags/OCR/" class="tag">#OCR</a><a href="/tags/DevOps/" class="tag">#DevOps</a>
         </p>
         
     </div>
@@ -244,21 +242,21 @@
 
     <div class="container post-prev-next">
         
-        <a href="/2025/03/13/voice-scroll/" class="next">
+        <a href="/2025/03/13/repos/bedit-frontend/" class="next">
             <div>
                 <div class="text">
                     <p class="label">下一篇</p>
-                    <h3 class="title">Voice Scroll 提词器应用项目总结</h3>
+                    <h3 class="title">BEdit前端项目技术栈分析</h3>
                 </div>
             </div>
         </a>
         
         
-        <a href="/2025/03/13/jy-web/" class="prev">
+        <a href="/2025/03/13/repos/aichat-backend/" class="prev">
             <div>
                 <div class="text">
                     <p class="label">上一篇</p>
-                    <h3 class="title">君颖投资项目经历简介</>
+                    <h3 class="title">Go语言AI聊天机器人项目技术总结</>
                 </div>
             </div>
         </a>
