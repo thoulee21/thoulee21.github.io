@@ -20,16 +20,15 @@ jobs:
         with:
             submodules: true
             fetch-depth: 0
-
-      - name: Config Git user email
-        run:
-            git config --global user.email "thou_lee@outlook.com"
-      - name: Config Git user name
-        run:
-            git config --global user.name "thoulee"
-
+      
       - name: Install node modules
         run: npm install
+
       - name: Deploy to GitHub Pages
-        run: npm run deploy:pages
+        env:
+            GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+            git config --global user.name 'github-actions[bot]'
+            git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            npm run deploy:pages
             
