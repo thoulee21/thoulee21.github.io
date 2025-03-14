@@ -52,11 +52,11 @@ scroll_reveal: false
 # navigation config
 nav:
   # the title displays in the upper left corner which won't change
-  title: Matt Lee's Blog
+  title: Blog
   # the items displays in the upper right corner
   items:
     # these items will display as a link
-    Blog: /
+    Home: /
     Archives: /archives
     Tags: /tags
     Categories: /categories
@@ -76,7 +76,7 @@ footer:
   # the title
   Blog:
     # the items after the title, display as links
-    Blog: /
+    Home: /
     Archives: /archives
     Tags: /tags
     Categories: /categories
