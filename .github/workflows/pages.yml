@@ -20,10 +20,12 @@ jobs:
         with:
             submodules: true
             fetch-depth: 0
-            
-      - name: Config Git
+
+      - name: Config Git user email
         run:
             git config user.email "thou_lee@outlook.com"
+      - name: Config Git user name
+        run:
             git config user.name "thoulee"
 
       - name: Install node modules
