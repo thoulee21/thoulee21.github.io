@@ -8,7 +8,7 @@
 # og_enabled: true
 # og_image: /favicon.png
 # og:
-  # customize og properties here which will replace the defaults
+# customize og properties here which will replace the defaults
 
 # show excerpt on post list
 show_excerpt: false
@@ -31,12 +31,12 @@ hashtag_prefix_before_tags: true
 # rainbow!
 rainbow_banner: true
 rainbow_banner_colors:
-  - '#e50000'
-  - '#ff8d00'
-  - '#ffee00'
-  - '#008121'
-  - '#004cff'
-  - '#760188'
+  - "#e50000"
+  - "#ff8d00"
+  - "#ffee00"
+  - "#008121"
+  - "#004cff"
+  - "#760188"
 # choose from [auto, always]
 rainbow_banner_shown: auto
 # Pride Month by default
@@ -87,10 +87,10 @@ footer:
     # About: /about
     # RSS: /atom.xml
   # also the title
-  # Projects:
-  #   # the items
-  #   RSA CLI: https://github.com/MrWillCom/rsa-cli
-  #   Hexo Theme Cupertino: https://github.com/MrWillCom/hexo-theme-cupertino
+  Projects:
+    # the items
+    Joint Player: https://github.com/thoulee21/joint-player
+    Film Speak: https://github.com/thoulee21/film-speak
   #   A Calendar: https://github.com/MrWillCom/a-calendar
   #   Auto Mirroring Bucket: https://github.com/MrWillCom/auto-mirroring-bucket
   # the title
@@ -104,7 +104,7 @@ footer:
     Email: mailto:thou_lee@outlook.com
 
 # footer extra description
-# footer_extra_description: something will be shown at the bottom of the footer
+footer_extra_description: "© 2025 Matt Lee. All rights reserved."
 
 # the license your posts under
 license: CC BY-NC 4.0
