@@ -5,10 +5,10 @@
 # manifest: /manifest.json
 
 # [Open Graph Protocol](https://ogp.me/)
-# og_enabled: true
+og_enabled: true
 # og_image: /favicon.png
 # og:
-# customize og properties here which will replace the defaults
+  # customize og properties here which will replace the defaults
 
 # show excerpt on post list
 show_excerpt: false
@@ -38,7 +38,7 @@ rainbow_banner_colors:
   - "#004cff"
   - "#760188"
 # choose from [auto, always]
-rainbow_banner_shown: auto
+rainbow_banner_shown: always
 # Pride Month by default
 rainbow_banner_month: 6
 
@@ -104,7 +104,7 @@ footer:
     Email: mailto:thou_lee@outlook.com
 
 # footer extra description
-footer_extra_description: "© 2025 Matt Lee. All rights reserved."
+# footer_extra_description: "This is a footer extra description."
 
 # the license your posts under
 license: CC BY-NC 4.0
