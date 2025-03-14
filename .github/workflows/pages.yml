@@ -23,10 +23,10 @@ jobs:
 
       - name: Config Git user email
         run:
-            git config user.email "thou_lee@outlook.com"
+            git config --global user.email "thou_lee@outlook.com"
       - name: Config Git user name
         run:
-            git config user.name "thoulee"
+            git config --global user.name "thoulee"
 
       - name: Install node modules
         run: npm install
