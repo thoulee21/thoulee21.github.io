@@ -13,12 +13,19 @@ jobs:
       contents: read
       packages: write
       issues: write
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
             submodules: true
             fetch-depth: 0
+            
+      - name: Config Git
+        run:
+            git config user.email "thou_lee@outlook.com"
+            git config user.name "thoulee"
+
       - name: Install node modules
         run: npm install
       - name: Deploy to GitHub Pages
