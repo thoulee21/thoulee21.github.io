@@ -102,7 +102,7 @@ theme: cupertino
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:thoulee21/thoulee21.github.io.git
+  repo: https://github.com/thoulee21/thoulee21.github.io.git
   branch: gh-pages
   token: $GH_TOKEN
 
