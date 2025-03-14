@@ -28,7 +28,4 @@ jobs:
         env:
             GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-            git config --global user.name 'github-actions[bot]'
-            git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
             npm run deploy:pages
-            
