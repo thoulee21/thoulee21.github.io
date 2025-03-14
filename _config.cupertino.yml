@@ -1,12 +1,12 @@
 # the path to your blog's icon:
-# favicon: /favicon.png
+favicon: /favicon.png
 
 # the path to manifest.json
 # manifest: /manifest.json
 
 # [Open Graph Protocol](https://ogp.me/)
 og_enabled: true
-# og_image: /favicon.png
+og_image: /favicon.png
 # og:
   # customize og properties here which will replace the defaults
 
@@ -86,16 +86,10 @@ footer:
     # Resume: /resume
     # About: /about
     # RSS: /atom.xml
-  # also the title
   Projects:
-    # the items
     Joint Player: https://github.com/thoulee21/joint-player
     Film Speak: https://github.com/thoulee21/film-speak
-  #   A Calendar: https://github.com/MrWillCom/a-calendar
-  #   Auto Mirroring Bucket: https://github.com/MrWillCom/auto-mirroring-bucket
-  # the title
   Me:
-    # items
     GitHub: https://github.com/thoulee21
     # CodePen: https://codepen.io/mrwillcom
     # Patreon: https://www.patreon.com/MrWillCom
