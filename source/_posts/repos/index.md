@@ -12,17 +12,6 @@ tags:
 
 # 项目经历总结
 
-## Voice Scroll 提词器应用（2025.01-2025.03）
-**技术栈**：React Native, TypeScript, Redux Toolkit, Expo, React Navigation, Reanimated
-
-**项目描述**：一款跨平台(iOS/Android)移动提词器应用，支持语音识别自动滚动、多脚本管理等专业功能。
-
-**主要贡献**：
-- 设计并实现了基于搜索范围的文本匹配算法，提高语音识别场景下的文本定位准确率
-- 基于`requestAnimationFrame`开发自定义`ScrollController`，实现平滑变速滚动控制系统
-- 采用Redux分片架构管理应用状态，结合Redux Persist实现数据持久化
-- 优化应用在不同设备上的响应式布局，支持平板/手机和横/竖屏无缝切换
-
 ## Film Speak 影音学习应用（2024.11-2025.02）
 **技术栈**：React Native, TypeScript, ffmpeg-kit, Microsoft Speech SDK, Redux, Expo Router
 
