@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
     <head prefix="og: https://ogp.me/ns#">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -104,7 +104,7 @@
         <a class="title" href="/">Blog</a>
         <div class="nav-arrow"></div>
         <div class="nav-items">
-            <a class="nav-item nav-item-home" href="/">Home</a>
+            <a class="nav-item nav-item-home" href="/">主页</a>
             
             
             <a class="nav-item" href="/archives">Archives</a>
@@ -256,12 +256,30 @@
 <hr>
 <h4 id="二、测试用例编写规范：结构与工具"><a href="#二、测试用例编写规范：结构与工具" class="headerlink" title="二、测试用例编写规范：结构与工具"></a><strong>二、测试用例编写规范：结构与工具</strong></h4><ol>
 <li><p><strong>标准模板要素</strong><br>• <strong>必填项</strong>：用例编号（如TC-001）、测试目标、前置条件、测试步骤、预期结果、优先级（P0&#x2F;P1&#x2F;P2）。<br>• <strong>扩展项</strong>：测试数据（如特定账号）、关联需求ID、自动化标记（是&#x2F;否）。<br>• <strong>示例</strong>（登录功能）：  </p>
-<pre><code>用例编号：TC-LOGIN-01  
-标题：验证无效密码登录失败  
-前置条件：已注册用户test@example.com，密码123456  
-步骤：输入test@example.com，密码654321 → 点击登录  
-预期结果：提示“密码错误，请重试”  
-</code></pre>
+<table>
+<thead>
+<tr>
+<th>用例编号</th>
+<th>TC-LOGIN-01</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>标题</td>
+<td>验证无效密码登录失败</td>
+</tr>
+<tr>
+<td>前置条件</td>
+<td>已注册用户<a href="mailto:&#116;&#x65;&#x73;&#116;&#64;&#101;&#x78;&#97;&#x6d;&#112;&#x6c;&#x65;&#46;&#x63;&#111;&#x6d;">test@example.com</a>，密码123456</td>
+</tr>
+<tr>
+<td>测试步骤</td>
+<td>输入<a href="mailto:&#x74;&#x65;&#115;&#116;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#108;&#x65;&#46;&#x63;&#x6f;&#109;">test@example.com</a>，密码654321 → 点击登录</td>
+</tr>
+<tr>
+<td>预期结果</td>
+<td>提示“密码错误，请重试”</td>
+</tr>
+</tbody></table>
 </li>
 <li><p><strong>工具选择与协作</strong><br>• <strong>管理工具</strong>：TestRail（支持用例版本跟踪）、Jira+Zephyr（敏捷团队集成）。<br>• <strong>自动化工具</strong>：Pytest（接口用例参数化）、Selenium（Web UI自动化脚本生成）。<br>• <strong>协作规范</strong>：<br>  ◦ 使用统一模板（如Excel或TestRail自定义字段）。<br>  ◦ 定期交叉评审（每周例会，重点检查边界和异常场景）。</p>
 </li>
@@ -296,9 +314,9 @@
 
     
     <div class="about">
-        <h1>About this Post</h1>
+        <h1>关于本文</h1>
         <div class="details">
-            <p>This post is written by Matt Lee, licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0</a>.</p>
+            <p>由 Matt Lee 撰写, 采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0</a> 许可协议.</p>
         </div>
         
         <p class="tags">
@@ -316,7 +334,7 @@
         <a href="/2025/03/14/repos/index/" class="prev">
             <div>
                 <div class="text">
-                    <p class="label">Previous</p>
+                    <p class="label">上一篇</p>
                     <h3 class="title">项目经历总结</>
                 </div>
             </div>
@@ -370,7 +388,7 @@
             </div>
             
         </div>
-        <span>&copy; 2025 Matt Lee<br>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> </span>
+        <span>&copy; 2025 Matt Lee<br>由 <a href="http://hexo.io/" target="_blank">Hexo</a> 驱动 </span>
         
         
             <br>
