@@ -1,16 +1,15 @@
 ---
 title: Joint Player 项目经验总结
+date: 2025-03-13 22:09:33
 categories:
-  - Repos
-date: 2025-03-13 22:30:20
+    - Repos
 tags:
-  - React Native
-  - Redux
-  - SWR
-  - MMKV
-  - Expo
-  - i18next
-  - Sentry
+    - React Native
+    - Redux
+    - Redux-Persist
+    - MMKV
+    - TypeScript
+cover_image: https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17
 ---
 
 # Joint Player 项目经验总结

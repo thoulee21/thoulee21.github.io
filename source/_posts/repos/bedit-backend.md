@@ -8,6 +8,7 @@ tags:
     - AI
     - OCR
     - DevOps
+cover_image: https://images.unsplash.com/photo-1607799279861-4dd421887fb3
 ---
 
 # BEdit后端项目经历总结
