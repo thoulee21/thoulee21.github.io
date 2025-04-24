@@ -44,7 +44,7 @@ rainbow_banner_month: 6
 
 # TOC - table of contents
 toc: true
-toc_max_depth: 3
+toc_max_depth: 2
 
 # scroll reveal (https://scrollrevealjs.org/) - animating elements as they enter/leave the viewport
 # scroll_reveal: true
