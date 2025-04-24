@@ -8,7 +8,6 @@ tags:
     - React
     - Material UI
     - Emotion
-cover_image: https://images.unsplash.com/photo-1542831371-29b0f74f9713
 ---
 
 # bedit 项目技术栈分析

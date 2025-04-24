@@ -15,7 +15,6 @@ tags:
   - PyQRCode
   - Multiprocessing
   - argparse
-cover_image: https://images.unsplash.com/photo-1587620962725-abab7fe55159
 ---
 
 # ImageViewer 项目经历总结

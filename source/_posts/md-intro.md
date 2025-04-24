@@ -6,7 +6,6 @@ categories:
 tags:
     - markdown
     - syntax
-cover_image: https://images.unsplash.com/photo-1579262170601-1f22ea9bbfaf
 ---
 
 # 定义：
