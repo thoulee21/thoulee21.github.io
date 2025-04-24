@@ -7,7 +7,6 @@ tags:
     - Python
     - Turtle
 cover_image: https://images.unsplash.com/photo-1726795203378-ce87cd77d5e2
-excerpt: 以“智能时代 逐梦成长”为主题，使用 Python 编程语言，借助 Turtle 绘图模块绘制创意绘画作品
 ---
 
 ## 主题阐释

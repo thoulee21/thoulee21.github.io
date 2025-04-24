@@ -11,7 +11,7 @@ og_image: /favicon.png
   # customize og properties here which will replace the defaults
 
 # show excerpt on post list
-show_excerpt: true
+show_excerpt: false
 
 # light/dark/auto color scheme
 color_scheme: auto
