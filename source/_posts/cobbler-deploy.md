@@ -34,11 +34,13 @@ Cobbler是Linux安装服务器可以快速设置网络安装环境、具备web�
 - rhel8系列（已经验证OK）
 - rhel9系列（镜像文件是没有问题的，但是安装的时候会有报错，目前还未解决）
 
+#### YUM源准备（必须有epel和Base源）
 ```shell
-#YUM源准备（必须有epel和Base源）
 bash <(curl -sSL https://linuxmirrors.cn/main.sh)
+```
 
-#关闭防火墙和selinux
+#### 关闭防火墙和SELinux
+```shell
 systemctl disable firewalld.service
 systemctl stop firewalld.service
 sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
@@ -74,31 +76,31 @@ rpm -ql cobbler
 
 #### Cobbler 目录文件结构
 
-| 目录/文件路径 | 说明 |
-|--------------|------|
-| `/etc/cobbler` | 配置文件目录 |
-| `/etc/cobbler/settings` | cobbler主配置文件 |
-| `/etc/cobbler/dhcp.template` | dhcp服务的配置模板 |
-| `/etc/cobbler/tftpd.template` | tftp服务的配置模板 |
-| `/etc/cobbler/rsync.template` | rsync服务的配置模板 |
-| `/etc/cobbler/iso` | iso模板配置文件目录 |
-| `/etc/cobbler/pxe` | pxe模板文件目录 |
-| `/etc/cobbler/power` | 电源的配置文件目录 |
-| `/etc/cobbler/users.conf` | web服务授权配置文件 |
-| `/etc/cobbler/users.digest` | 用于web访问的用户名密码配置文件 |
-| `/etc/cobbler/dnsmasq.template` | dns服务的配置模板 |
-| `/etc/cobbler/modules.conf` | cobbler模块配置文件 |
-| `/var/lib/cobbler` | cobbler数据目录 |
-| `/var/lib/cobbler/config` | 配置文件 |
-| `/var/lib/cobbler/kickstarts` | 默认存放kickstart文件 |
-| `/var/lib/cobbler/loaders` | 存放的各种引导程序 |
-| `/var/www/cobbler` | 系统安装镜像目录 |
-| `/var/www/cobbler/ks_mirror` | 导入的系统镜像列表 |
-| `/var/www/cobbler/images` | 导入的系统镜像启动文件 |
-| `/var/www/cobbler/repo_mirror` | YUM源存储目录 |
-| `/var/log/cobbler` | 日志目录 |
-| `/var/log/cobbler/install.log` | 客户端系统安装日志 |
-| `/var/log/cobbler/cobbler.log` | cobbler日志 |
+| 目录/文件路径                   | 说明                            |
+| ------------------------------- | ------------------------------- |
+| `/etc/cobbler`                  | 配置文件目录                    |
+| `/etc/cobbler/settings`         | cobbler主配置文件               |
+| `/etc/cobbler/dhcp.template`    | dhcp服务的配置模板              |
+| `/etc/cobbler/tftpd.template`   | tftp服务的配置模板              |
+| `/etc/cobbler/rsync.template`   | rsync服务的配置模板             |
+| `/etc/cobbler/iso`              | iso模板配置文件目录             |
+| `/etc/cobbler/pxe`              | pxe模板文件目录                 |
+| `/etc/cobbler/power`            | 电源的配置文件目录              |
+| `/etc/cobbler/users.conf`       | web服务授权配置文件             |
+| `/etc/cobbler/users.digest`     | 用于web访问的用户名密码配置文件 |
+| `/etc/cobbler/dnsmasq.template` | dns服务的配置模板               |
+| `/etc/cobbler/modules.conf`     | cobbler模块配置文件             |
+| `/var/lib/cobbler`              | cobbler数据目录                 |
+| `/var/lib/cobbler/config`       | 配置文件                        |
+| `/var/lib/cobbler/kickstarts`   | 默认存放kickstart文件           |
+| `/var/lib/cobbler/loaders`      | 存放的各种引导程序              |
+| `/var/www/cobbler`              | 系统安装镜像目录                |
+| `/var/www/cobbler/ks_mirror`    | 导入的系统镜像列表              |
+| `/var/www/cobbler/images`       | 导入的系统镜像启动文件          |
+| `/var/www/cobbler/repo_mirror`  | YUM源存储目录                   |
+| `/var/log/cobbler`              | 日志目录                        |
+| `/var/log/cobbler/install.log`  | 客户端系统安装日志              |
+| `/var/log/cobbler/cobbler.log`  | cobbler日志                     |
 
 ---
 
@@ -126,11 +128,8 @@ sed -i 's|^manage_tftpd.*|manage_tftpd: 1|g' /etc/cobbler/settings
 #cobbler启动服务
 systemctl enable --now httpd.service
 systemctl enable --now cobblerd.service
-
-#cobbler可以将自身作为dhcp服务器为安装系统的客户端分发IP地址、也可以使用已有的dhcp服务器
-
-#为了首次同步成功这里统一将cobbler接管dhcp的功能暂时关闭
 ```
+> cobbler可以将自身作为dhcp服务器为安装系统的客户端分发IP地址、也可以使用已有的dhcp服务器，为了首次同步成功这里统一将cobbler接管dhcp的功能暂时关闭
 
 ### Cobbler 首次检查
 
@@ -306,7 +305,7 @@ systemctl restart xinetd.service
 ### 系统镜像挂载
 
 #### Ubuntu镜像注意事项
-不支持desktop、live版本（仅支持LTS server version版本）
+不支持desktop、live版本（仅支持LTS server version版本）<br/>
 推荐ubuntu-18.04-server-amd64
 
 #### 使用光驱加载Centos7的系统镜像
@@ -330,10 +329,11 @@ cobbler <aclsetup|buildiso|import|list|replicate|report|reposync|sync|validateks
 
 ### Cobbler 导入镜像
 
+#### 命令语法
 ```shell
-#命令语法
 cobbler import --help
 ```
+
 ```
 Usage: cobbler import [options]
 Options:
@@ -391,9 +391,9 @@ mv /var/lib/cobbler/kickstarts/sample.seed /var/lib/cobbler/kickstarts/sample.se
 #适配Ubuntu18.04其余版本
 curl -L https://drive.swireb.cn/d/Linux/Cobbler/v2.8.5/ks/sample.seed > /var/lib/cobbler/kickstarts/sample.seed
 ```
----
+
+#### Ubuntu系统配置软件源模板文件
 ```shell
-#Ubuntu系统配置软件源模板文件
 vim /var/lib/cobbler/snippets/late_apt_repo_config
 ```
 
@@ -407,12 +407,13 @@ deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe 
 EOF
 ```
 
+#### 允许 root 用户 SSH 登录
 ```shell
 sed -i 's|.*PermitRootLogin.*|PermitRootLogin yes|g' /etc/ssh/sshd_config && service ssh start
 ```
----
+
+#### 安装Ubuntu系统之后执行的脚本模板文件
 ```shell
-#安装Ubuntu系统之后执行的脚本模板文件
 vim /var/lib/cobbler/scripts/preseed_late_default
 ```
 ```shell
@@ -427,8 +428,8 @@ $SNIPPET('post_run_deb')
 
 ### 服务端配置 BIOS 启动菜单
 
+#### 修改启动菜单配置文件
 ```shell
-#修改启动菜单配置文件
 vim /etc/cobbler/pxe/pxedefault.template
 ```
 ```
@@ -454,28 +455,28 @@ tar xf grub.tar.gz -C /var/lib/cobbler/loaders
 #命令下载UEFI启动的相关文件（V2.8.5版本此命令已经失效）
 cobbler get-loaders
 ```
----
+
+#### 修改启动菜单配置文件
 ```shell
-#修改启动菜单配置文件
 vim /etc/cobbler/pxe/efidefault.template
 ```
 ```
 timeout=6000  #修改启动菜单加时间（必须修改不然一闪则过）
 ```
----
+
+#### cobbler 重新同步
 ```shell
-#cobbler重新同步
 cobbler sync
 ```
 
 ## Cobbler 配置 Web 管理界面
 
-### 访问地址（必须为https）
+### 访问地址（必须为*https*）
 https://ip/cobbler_web
 
 ### 默认访问用户
-- 用户:cobbler
-- 密码:cobbler
+- 用户: cobbler
+- 密码: cobbler
 
 ### 创建用户
 ```
@@ -508,8 +509,9 @@ curl -L https://cobbler.github.io/signatures/2.8.x/latest.json > /var/lib/cobble
 #在rhel8的version_file键值对中添加centos-linux-release centos-stream-release
 vim /var/lib/cobbler/distro_signatures.json
 ```
+
 ```json
-   "rhel8": {
+"rhel8": {
     "signatures":["BaseOS"],
     "version_file":"(redhat|sl|slf|centos|centos-linux|centos-stream|oraclelinux|vzlinux)-release-(?!notes)([\\w]*-)*8(Server)*[\\.-]+(.*)\\.rpm",
     "version_file_regex":null,
@@ -524,18 +526,21 @@ vim /var/lib/cobbler/distro_signatures.json
     "kernel_options":"",
     "kernel_options_post":"",
     "boot_files":[]
-   },
+},
 ```
+
 ```shell
 #重启服务
 systemctl restart cobblerd.service
 ```
 
+---
+
 ### Ubuntu18、Ubuntu19 解决办法
 
 #### Ubuntu 18.10
 ```json
-    "cosmic": {
+"cosmic": {
     "signatures":["dists", ".disk"],
     "version_file":"Release|mini-info",
     "version_file_regex":"Codename: cosmic|Ubuntu 18.10",
@@ -550,11 +555,12 @@ systemctl restart cobblerd.service
     "kernel_options":"",
     "kernel_options_post":"",
     "boot_files":[]
+},
 ```
 
 #### Ubuntu 19.04
 ```json
-    "disco": {
+"disco": {
     "signatures":["dists", ".disk"],
     "version_file":"Release|mini-info",
     "version_file_regex":"Codename: disco|Ubuntu 19.04",
@@ -569,10 +575,12 @@ systemctl restart cobblerd.service
     "kernel_options":"",
     "kernel_options_post":"",
     "boot_files":[]
+}，
 ```
+
 #### Ubuntu 19.10
 ```json
-    "eoan": {
+"eoan": {
     "signatures":["dists", ".disk"],
     "version_file":"Release|mini-info",
     "version_file_regex":"Codename: eoan|Ubuntu 19.10",
@@ -587,7 +595,7 @@ systemctl restart cobblerd.service
     "kernel_options":"",
     "kernel_options_post":"",
     "boot_files":[]
-    },
+},
 ```
 
 ##### 重启服务
