@@ -72,31 +72,35 @@ yum install -y dhcp tftp-server xinetd debmirror pykickstart cobbler cobbler-web
 rpm -ql cobbler
 ```
 
-```
-/etc/cobbler                  #配置文件目录
-/etc/cobbler/settings         #cobbler主配置文件
-/etc/cobbler/dhcp.template    #dhcp服务的配置模板
-/etc/cobbler/tftpd.template   #tftp服务的配置模板
-/etc/cobbler/rsync.template   #rsync服务的配置模板
-/etc/cobbler/iso              #iso模板配置文件目录
-/etc/cobbler/pxe              #pxe模板文件目录
-/etc/cobbler/power            #电源的配置文件目录
-/etc/cobbler/users.conf       #web服务授权配置文件
-/etc/cobbler/users.digest     #用于web访问的用户名密码配置文件
-/etc/cobbler/dnsmasq.template #dns服务的配置模板
-/etc/cobbler/modules.conf     #cobbler模块配置文件
-/var/lib/cobbler              #cobbler数据目录
-/var/lib/cobbler/config       #配置文件
-/var/lib/cobbler/kickstarts   #默认存放kickstart文件
-/var/lib/cobbler/loaders      #存放的各种引导程序
-/var/www/cobbler              #系统安装镜像目录
-/var/www/cobbler/ks_mirror    #导入的系统镜像列表
-/var/www/cobbler/images       #导入的系统镜像启动文件
-/var/www/cobbler/repo_mirror  #YUM源存储目录
-/var/log/cobbler              #日志目录
-/var/log/cobbler/install.log  #客户端系统安装日志
-/var/log/cobbler/cobbler.log  #cobbler日志
-```
+#### Cobbler 目录文件结构
+
+| 目录/文件路径 | 说明 |
+|--------------|------|
+| `/etc/cobbler` | 配置文件目录 |
+| `/etc/cobbler/settings` | cobbler主配置文件 |
+| `/etc/cobbler/dhcp.template` | dhcp服务的配置模板 |
+| `/etc/cobbler/tftpd.template` | tftp服务的配置模板 |
+| `/etc/cobbler/rsync.template` | rsync服务的配置模板 |
+| `/etc/cobbler/iso` | iso模板配置文件目录 |
+| `/etc/cobbler/pxe` | pxe模板文件目录 |
+| `/etc/cobbler/power` | 电源的配置文件目录 |
+| `/etc/cobbler/users.conf` | web服务授权配置文件 |
+| `/etc/cobbler/users.digest` | 用于web访问的用户名密码配置文件 |
+| `/etc/cobbler/dnsmasq.template` | dns服务的配置模板 |
+| `/etc/cobbler/modules.conf` | cobbler模块配置文件 |
+| `/var/lib/cobbler` | cobbler数据目录 |
+| `/var/lib/cobbler/config` | 配置文件 |
+| `/var/lib/cobbler/kickstarts` | 默认存放kickstart文件 |
+| `/var/lib/cobbler/loaders` | 存放的各种引导程序 |
+| `/var/www/cobbler` | 系统安装镜像目录 |
+| `/var/www/cobbler/ks_mirror` | 导入的系统镜像列表 |
+| `/var/www/cobbler/images` | 导入的系统镜像启动文件 |
+| `/var/www/cobbler/repo_mirror` | YUM源存储目录 |
+| `/var/log/cobbler` | 日志目录 |
+| `/var/log/cobbler/install.log` | 客户端系统安装日志 |
+| `/var/log/cobbler/cobbler.log` | cobbler日志 |
+
+---
 
 ### Cobbler 主配置文件修改
 
