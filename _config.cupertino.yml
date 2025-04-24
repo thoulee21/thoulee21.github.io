@@ -56,9 +56,10 @@ nav:
   # the items displays in the upper right corner
   items:
     # these items will display as a link
-    Archives: /archives
     Tags: /tags
     Categories: /categories
+    Archives: /archives
+    Imgv Web: http://thou.japaneast.cloudapp.azure.com/imgv
     # Friends: /friends
     # Projects: /projects
     # About: /about
@@ -75,10 +76,9 @@ footer:
   # the title
   Blog:
     # the items after the title, display as links
-    Archives: /archives
     Tags: /tags
     Categories: /categories
-    Search: /search
+    Archives: /archives
     # Friends: /friends
     # Projects: /projects
     # Resume: /resume
@@ -87,7 +87,6 @@ footer:
   Projects:
     Joint Player: https://github.com/thoulee21/joint-player
     Film Speak: https://github.com/thoulee21/film-speak
-    Imgv Web: http://thou.japaneast.cloudapp.azure.com/imgv
   Me:
     GitHub: https://github.com/thoulee21
     # CodePen: https://codepen.io/mrwillcom
