@@ -10,7 +10,6 @@ tags:
   - Async
   - Jinja2
   - User-Agent
-cover_image: /images/web-dev.jpg
 ---
 
 # imgv-webapp项目经历总结

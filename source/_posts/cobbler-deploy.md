@@ -7,7 +7,6 @@ tags:
     - cobbler
     - centos
     - linux
-cover_image: /images/cobbler.jpg
 ---
 
 # 部署 [Cobbler](http://cobbler.github.io/) 2.8.5
