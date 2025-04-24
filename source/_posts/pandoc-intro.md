@@ -7,6 +7,7 @@ tags:
     - pandoc
     - markdown
 cover_image: /images/beach-car.jpg
+excerpt: Pandoc 是一个强大的文档转换工具，可以在多种格式之间进行转换
 ---
 
 [Markdown](https://zh.wikipedia.org/zh-cn/Markdown) 是我平时编写各类材料和文章时最喜欢的工具之一，但将其作为文档分发时却略有些不便。毕竟不是所有人都了解 Markdown 的语法，而且它亦不如富文本文档易读。直至我发现了 [Pandoc](http://pandoc.org/)，它可以将文档在 Markdown、LaTeX、reStructuredText、HTML、Word docx 等多种标记格式之间相互转换，并支持输出 PDF、EPUB、HTML 幻灯片等多种格式。
