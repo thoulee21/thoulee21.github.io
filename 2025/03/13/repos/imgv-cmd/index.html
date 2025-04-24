@@ -97,7 +97,7 @@
         data-config-root="/"
         
         data-toc="true"
-        data-toc-max-depth="3"
+        data-toc-max-depth="2"
         
         
     >
@@ -187,7 +187,12 @@
 <li>利用Python multiprocessing模块的进程池(Pool)实现并行下载</li>
 <li>为每个图片分配独立进程，显著提升下载速度</li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">download_all</span>(<span class="params">self, temp=<span class="literal">True</span></span>):</span><br><span class="line">    pool = Pool(<span class="variable language_">self</span>.count)</span><br><span class="line">    <span class="keyword">for</span> pic <span class="keyword">in</span> <span class="variable language_">self</span>.pic_objs:</span><br><span class="line">        pool.apply_async(pic.download, args=(<span class="literal">None</span>, temp))</span><br><span class="line">    pool.close()</span><br><span class="line">    pool.join()</span><br></pre></td></tr></table></figure>
+<pre><code class="highlight python"><span class="keyword">def</span> <span class="title function_">download_all</span>(<span class="params">self, temp=<span class="literal">True</span></span>):
+    pool = Pool(<span class="variable language_">self</span>.count)
+    <span class="keyword">for</span> pic <span class="keyword">in</span> <span class="variable language_">self</span>.pic_objs:
+        pool.apply_async(pic.download, args=(<span class="literal">None</span>, temp))
+    pool.close()
+    pool.join()</code></pre>
 
 <h3 id="2-数据持久化与管理"><a href="#2-数据持久化与管理" class="headerlink" title="2. 数据持久化与管理"></a>2. 数据持久化与管理</h3><p><strong>难点</strong>：需要安全有效地存储和管理图片元数据<br><strong>解决方案</strong>：</p>
 <ul>
