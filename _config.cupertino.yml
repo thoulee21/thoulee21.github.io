@@ -29,7 +29,7 @@ capitalize_tags: false
 hashtag_prefix_before_tags: true
 
 # rainbow!
-rainbow_banner: true
+rainbow_banner: false
 rainbow_banner_colors:
   - "#e50000"
   - "#ff8d00"
@@ -38,7 +38,7 @@ rainbow_banner_colors:
   - "#004cff"
   - "#760188"
 # choose from [auto, always]
-rainbow_banner_shown: always
+rainbow_banner_shown: auto
 # Pride Month by default
 rainbow_banner_month: 6
 
@@ -47,12 +47,12 @@ toc: true
 toc_max_depth: 2
 
 # scroll reveal (https://scrollrevealjs.org/) - animating elements as they enter/leave the viewport
-scroll_reveal: false
+# scroll_reveal: true
 
 # navigation config
 nav:
   # the title displays in the upper left corner which won't change
-  title: Blog
+  title: Matt's Weblog
   # the items displays in the upper right corner
   items:
     # these items will display as a link
@@ -98,7 +98,7 @@ footer:
     Email: mailto:thou_lee@outlook.com
 
 # footer extra description
-# footer_extra_description: "This is a footer extra description."
+footer_extra_description: "Matt Lee's Weblog - A blog about tech & life"
 
 # the license your posts under
 license: CC BY-NC 4.0
