@@ -46,6 +46,7 @@ future: true
 syntax_highlighter: highlight.js
 highlight:
   line_number: true
+  line_threshold: 10
   auto_detect: true
   tab_replace: ''
   wrap: false

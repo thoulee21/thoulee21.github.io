@@ -1,5 +1,28 @@
 /* This Code Highlighting Theme is based on GitHub Theme */
 
+/* 添加代码字体和字号设置 */
+pre, code, .highlight, .highlight pre, .highlight code {
+    font-family: "JetBrains Mono", "Fira Code", "Source Code Pro", Menlo, Consolas, Monaco, monospace;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* 为行内代码应用字体但稍微小一点 */
+p code, li code, td code {
+    font-size: 14px;
+}
+
+/* 提升代码块的整体显示效果 */
+figure.highlight {
+    margin: 20px 0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+figure.highlight pre {
+    padding: 16px;
+}
+
 .gutter {
     color: var(--grey);
     user-select: none;
