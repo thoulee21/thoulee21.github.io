@@ -9,7 +9,7 @@ pre, code, .highlight, .highlight pre, .highlight code {
 
 /* 为行内代码应用字体但稍微小一点 */
 p code, li code, td code {
-    font-size: 14px;
+    padding: 2px 4px;
 }
 
 /* 提升代码块的整体显示效果 */
