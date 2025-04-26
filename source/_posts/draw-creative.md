@@ -6,6 +6,7 @@ categories:
 tags:
     - Python
     - Turtle
+cover_image: /images/turtle.jpg
 ---
 
 ## 主题阐释
