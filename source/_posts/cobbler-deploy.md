@@ -7,6 +7,8 @@ tags:
     - cobbler
     - centos
     - linux
+excerpt: >
+    在 CentOS 7.9 上部署 Cobbler 2.8.5 的实践，包含了 Cobbler 的基本概念、安装步骤、配置方法以及常见问题的解决方案
 cover_image: https://images.unsplash.com/photo-1598616068796-4977463419ed
 ---
 
