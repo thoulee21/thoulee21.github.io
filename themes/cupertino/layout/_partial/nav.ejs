@@ -16,7 +16,7 @@
             <% } else if (i == 'Discord' || i == 'discord'){ %>
             <a class="nav-item nav-item-discord nav-item-icon" href="<%- url_for(theme.nav.items[i]) %>" target="_blank" aria-label="Discord">&nbsp;</a>
             <% } else if (i == 'Search' || i == 'search'){ %>
-            <a class="nav-item nav-item-search nav-item-icon" href="<%- url_for(theme.nav.items[i]) %>" target="_blank" aria-label="Search">&nbsp;</a>
+            <a class="nav-item nav-item-search nav-item-icon" href="<%- url_for(theme.nav.items[i]) %>" aria-label="Search">&nbsp;</a>
             <% } else { %>
             <a class="nav-item" href="<%- url_for(theme.nav.items[i]) %>"><%= i %></a>
             <% } %>
