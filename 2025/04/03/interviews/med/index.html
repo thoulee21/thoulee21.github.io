@@ -121,7 +121,7 @@
             
             
             
-            <a class="nav-item" target="_blank" rel="noopener" href="http://thou.japaneast.cloudapp.azure.com/imgv">Imgv Web</a>
+            <a class="nav-item" target="_blank" rel="noopener" href="http://thou.japaneast.cloudapp.azure.com/imgv">ImgvWeb</a>
             
             
             
@@ -129,7 +129,7 @@
             
             
             
-            <a class="nav-item nav-item-search nav-item-icon" href="/search" target="_blank" aria-label="Search">&nbsp;</a>
+            <a class="nav-item nav-item-search nav-item-icon" href="/search" aria-label="Search">&nbsp;</a>
             
             
         </div>
@@ -287,11 +287,11 @@
 </tr>
 <tr>
 <td>前置条件</td>
-<td>已注册用户<a href="mailto:&#x74;&#101;&#115;&#116;&#x40;&#x65;&#120;&#97;&#109;&#112;&#108;&#101;&#x2e;&#99;&#111;&#x6d;">test@example.com</a>，密码123456</td>
+<td>已注册用户<a href="mailto:&#116;&#101;&#x73;&#116;&#x40;&#101;&#120;&#x61;&#x6d;&#x70;&#108;&#x65;&#46;&#x63;&#111;&#x6d;">test@example.com</a>，密码123456</td>
 </tr>
 <tr>
 <td>测试步骤</td>
-<td>输入<a href="mailto:&#116;&#101;&#115;&#x74;&#64;&#101;&#x78;&#97;&#109;&#x70;&#108;&#101;&#x2e;&#x63;&#x6f;&#109;">test@example.com</a>，密码654321 → 点击登录</td>
+<td>输入<a href="mailto:&#116;&#101;&#x73;&#116;&#x40;&#x65;&#120;&#97;&#x6d;&#112;&#108;&#101;&#46;&#x63;&#111;&#x6d;">test@example.com</a>，密码654321 → 点击登录</td>
 </tr>
 <tr>
 <td>预期结果</td>
@@ -459,6 +459,15 @@
         
         
 
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            window.addEventListener('load', () => {
+                ScrollReveal({ delay: 0, reset: false, easing: 'cubic-bezier(0.2, 0.2, 0.2, 1)' })
+                ScrollReveal().reveal('.post-list-item .cover-img img')
+                ScrollReveal().reveal('.post-list-item, .card, .content p img, .content .block-large img', { distance: '60px', origin: 'bottom', duration: 800 })
+            })
+        </script>
         
     </body>
 </html>
