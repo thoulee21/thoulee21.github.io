@@ -47,7 +47,7 @@ toc: true
 toc_max_depth: 2
 
 # scroll reveal (https://scrollrevealjs.org/) - animating elements as they enter/leave the viewport
-# scroll_reveal: true
+scroll_reveal: true
 
 # navigation config
 nav:
@@ -59,7 +59,7 @@ nav:
     Tags: /tags
     Categories: /categories
     Archives: /archives
-    Imgv Web: http://thou.japaneast.cloudapp.azure.com/imgv
+    ImgvWeb: http://thou.japaneast.cloudapp.azure.com/imgv
     # Friends: /friends
     # Projects: /projects
     # About: /about
