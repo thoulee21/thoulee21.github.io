@@ -23,7 +23,7 @@ show_color_scheme_toggle: true
 uppercase_categories: true
 
 # capitalize tag names on tags page
-capitalize_tags: false
+capitalize_tags: true
 
 # add hashtag prefix before tags
 hashtag_prefix_before_tags: true
