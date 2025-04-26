@@ -1,5 +1,7 @@
 ---
 title: Voice Scroll 提词器应用项目总结
+excerpt: |
+  本文总结了 Voice Scroll 提词器应用的技术栈、核心功能实现、技术难点及解决方案，展示了在移动应用开发中的全栈能力
 categories:
   - repos
 tags:
