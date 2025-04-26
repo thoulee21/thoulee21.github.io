@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   
-  <title>基于 Python-Turtle 的创意绘画作品 - Matt&#39;s Weblog</title>
+  <title>Python 元组(Tuple) 练习题 - Matt&#39;s Weblog</title>
   
     <link rel="shortcut icon" href="/favicon.png">
   
@@ -14,15 +14,15 @@
   
   
   
-  <meta property="og:title" content="基于 Python-Turtle 的创意绘画作品 - Matt&#39;s Weblog" />
+  <meta property="og:title" content="Python 元组(Tuple) 练习题 - Matt&#39;s Weblog" />
   
   <meta property="og:type" content="article" />
   
-  <meta property="og:url" content="https://thoulee21.github.io/2025/03/13/draw-creative/index.html" />
+  <meta property="og:url" content="https://thoulee21.github.io/2021/06/01/python/tuple/index.html" />
   
-  <meta property="og:image" content="https://images.unsplash.com/photo-1726795203378-ce87cd77d5e2" />
+  <meta property="og:image" content="/favicon.png" />
   
-  <meta property="og:article:published_time" content="2025-03-13T14:45:50.000Z" />
+  <meta property="og:article:published_time" content="2021-06-01T08:27:32.000Z" />
   
   <meta property="og:article:author" content="Matt Lee" />
   
@@ -143,39 +143,43 @@
         
             <a href="/categories/Legacy/">Legacy</a>
         
+            <a href="/categories/Legacy/Python/">Python</a>
+        
         </div>
         
 
         
         <div class="date" id="date">
-            <span>March</span>
-            <span>13,</span>
-            <span>2025</span>
+            <span>June</span>
+            <span>1,</span>
+            <span>2021</span>
         </div>
         
 
-        <h1 class="title">基于 Python-Turtle 的创意绘画作品</h1>
+        <h1 class="title">Python 元组(Tuple) 练习题</h1>
     </div>
 
     <div class="divider"></div>
 
     <div class="content">
-        <h2 id="主题阐释"><a href="#主题阐释" class="headerlink" title="主题阐释"></a>主题阐释</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><blockquote>
-<p>随着互联网、大数据、云计算和物联网等技术不断发展，人工智能正引发可产生链式反应的科学突破、催生一批颠覆性技术，加速培育经济发展新动能、塑造新型产业体系，引领新一轮科技革命和产业变革。故创新精神对于身处于智能时代的青少年来说尤为重要。</p>
+        <h1 id="Python-元组-Tuple-练习题"><a href="#Python-元组-Tuple-练习题" class="headerlink" title="Python 元组(Tuple) 练习题"></a>Python 元组(Tuple) 练习题</h1><h2 id="1-将一个给定的整型元组：tuple-range-1-7-倒序输出"><a href="#1-将一个给定的整型元组：tuple-range-1-7-倒序输出" class="headerlink" title="1. 将一个给定的整型元组：tuple(range(1, 7))倒序输出"></a>1. 将一个给定的整型元组：<code>tuple(range(1, 7))</code>倒序输出</h2><pre><code class="highlight python">nums = <span class="built_in">tuple</span>(<span class="built_in">range</span>(<span class="number">1</span>, <span class="number">7</span>))
+
+<span class="built_in">print</span>(nums)
+<span class="comment"># (1, 2, 3, 4, 5, 6)</span></code></pre>
+
+<pre><code class="highlight python">list_nums: <span class="built_in">list</span> = <span class="built_in">sorted</span>(nums, reverse=<span class="literal">True</span>)
+tuple_nums = <span class="built_in">tuple</span>(list_nums)
+
+<span class="built_in">print</span>(list_nums)
+<span class="built_in">print</span>(tuple_nums)</code></pre>
+
+<pre><code class="highlight shell">[6, 5, 4, 3, 2, 1]
+(6, 5, 4, 3, 2, 1)</code></pre>
+
+<h2 id="2-请问以下变量哪些是-tuple-类型："><a href="#2-请问以下变量哪些是-tuple-类型：" class="headerlink" title="2. 请问以下变量哪些是 tuple 类型："></a>2. 请问以下变量哪些是 <code>tuple</code> 类型：</h2><blockquote>
+<p>A. a &#x3D; ()<br>B. b &#x3D; (1)<br>C. c &#x3D; [2]<br>D. d &#x3D; (3,)<br>E. e &#x3D; (4, 5, 6)</p>
 </blockquote>
-<h3 id="主旨"><a href="#主旨" class="headerlink" title="主旨"></a>主旨</h3><p>看这棵正在成长的大树，它屹立于世界民族之林，扎根于日光之下的东方。它的枝干是如此茂密，枝干之招展是如此广阔，这份浓密，这正是我华夏儿女，炎黄子孙所肩并肩紧挨着凝聚而成，这份广阔，则是中华文化的博大精深，和神州大地的包罗万象。其生长速度之快，也正代表了我们中国发展的腾飞，从绿皮火车到地铁高铁，从车马漫长到全球通信，从机械制图到人工智能，而说到了人工智能，则会想起那个围棋冠军“阿尔法狗”，它的的飞速成长,也正代表了2018年人工智能的进步。在移动互联网、大数据、超级计算和脑科学等新理论新技术的驱动下,问世60余年、遭遇多次质疑的人工智能迎来新一轮发展热潮,真正进入了落地实践阶段，各国新政密集出台、科技巨头纷纷布局、最新进展日新月异……一个“新智能时代”正在到来。在这时代的大背景之下，神州升空，墨子观穹，中国发展不逊于世界任何强国，有如参天大树，以惊人的速度成长起来。而作为新兴“智能时代”下的中国青年，每每看到这天安门，总会想起言语：创新是一个民族的灵魂，是一个国家兴旺发达的不竭动力。新时代的浪涛浩浩汤汤，我们当勇立潮头，在巨浪中把握方向，创新争先，团结奋进，为这枝繁叶茂的中华神树再添上新兴的一笔，为中华民族绽放绚丽多彩的烟花。</p>
-<h2 id="程序制作过程"><a href="#程序制作过程" class="headerlink" title="程序制作过程"></a>程序制作过程</h2><p>选定作品主题“智能时代 逐梦成长”，确定立意。<br>确定作品实现架构。即，使用 Python 编程语言，借助 Turtle 绘图模块绘制创意绘画作品。<br>实现程序效果。</p>
-<h3 id="程序具体流程"><a href="#程序具体流程" class="headerlink" title="程序具体流程"></a>程序具体流程</h3><ol>
-<li>在窗体中央绘制出树干，以树干顶端为中心绘制多层嵌套的五边形，以增添图像美感。</li>
-<li>切换背景后，由左向右绘制树枝，以 Turtle 笔触的 stamp() 当做树叶。</li>
-<li>整棵树绘制完成后，绘画作品的主体绘制完毕。</li>
-<li>在屏幕的随机位置生成 9 个较小的多层嵌套的五边形烟花。</li>
-<li>烟花生成过程中，在生成到第七个烟花时，切换背景图片。</li>
-<li>烟花生成完毕后，以红色宋体 50 号字在窗口右下角处写出字样“创新争先，团结奋进”。</li>
-</ol>
-<h2 id="编程技巧"><a href="#编程技巧" class="headerlink" title="编程技巧"></a>编程技巧</h2><p>本次项目中，充分运用了函数的递归调用。采用函数式编程，模块化拆分程序功能，使函数调用更灵活，代码更加简洁易懂。<br>并采用 try…except 异常处理是程序表现更具人性化。</p>
-<hr>
-<p><a target="_blank" rel="noopener" href="https://www.kdocs.cn/l/sbF7kf4ShbzN">基于 Python-Turtle 的创意绘画作品</a><br><a target="_blank" rel="noopener" href="https://www.kdocs.cn/l/sbxs5XKaRjDx">青少年创意编程与智能设计大赛</a></p>
+<pre><code class="highlight shell">A, D, E</code></pre>
 
     </div>
 
@@ -189,7 +193,7 @@
         <p class="tags">
             
             <i class="icon"></i>
-            <a href="/tags/Python/" class="tag">#Python</a><a href="/tags/Turtle/" class="tag">#Turtle</a>
+            <a href="/tags/study/" class="tag">#study</a><a href="/tags/python/" class="tag">#python</a>
         </p>
         
     </div>
@@ -197,21 +201,21 @@
 
     <div class="container post-prev-next">
         
-        <a href="/2025/03/14/repos/index/" class="next">
+        <a href="/2021/06/01/python/list/" class="next">
             <div>
                 <div class="text">
                     <p class="label">下一篇</p>
-                    <h3 class="title">项目经历总结</h3>
+                    <h3 class="title">Python 列表(List) 练习题</h3>
                 </div>
             </div>
         </a>
         
         
-        <a href="/2025/03/13/pandoc-intro/" class="prev">
+        <a href="/2020/03/10/legacy/versioning/" class="prev">
             <div>
                 <div class="text">
                     <p class="label">上一篇</p>
-                    <h3 class="title">Pandoc 简介及使用</>
+                    <h3 class="title">语义化版本 2.0.0</>
                 </div>
             </div>
         </a>
