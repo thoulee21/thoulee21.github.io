@@ -2,13 +2,10 @@
 title: 医疗器械行业软件测试面试解析
 date: 2025-04-3 16:07:59
 categories:
-  - interview
+  - Interview
 tags:
   - 医疗器械
   - 测试
-  - 职责分析
-  - 任职资格
-  - 行业标准
   - 测试用例
 ---
 
