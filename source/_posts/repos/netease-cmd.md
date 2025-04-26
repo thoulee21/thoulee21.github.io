@@ -1,14 +1,14 @@
 ---
 title: NeteaseCmd 项目经历总结
 categories:
-  - Repos
-date: 2025-03-13 22:31:28
+  - repos
 tags:
   - Python
   - MongoDB
   - RESTful API
   - CLI
   - User Management
+date: 2025-03-13 22:31:28
 ---
 
 # 网易云音乐命令行客户端项目经历总结

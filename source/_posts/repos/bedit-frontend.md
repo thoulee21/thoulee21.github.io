@@ -1,14 +1,14 @@
 ---
 title: BEdit前端项目技术栈分析
-date: 2025-03-13 22:08:48
 categories:
-    - Repos
+  - repos
 tags:
-    - Next.js
-    - React
-    - Material UI
-    - Emotion
-cover_image: https://images.unsplash.com/photo-1542831371-29b0f74f9713
+  - Next.js
+  - React
+  - Material UI
+  - Emotion
+cover_image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713'
+date: 2025-03-13 22:08:48
 ---
 
 # bedit 项目技术栈分析

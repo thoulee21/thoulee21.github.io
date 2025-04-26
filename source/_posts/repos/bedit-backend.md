@@ -1,14 +1,14 @@
 ---
 title: BEdit后端项目经历总结
-date: 2025-03-13 22:07:53
 categories:
-    - Repos
+  - repos
 tags:
-    - Flask
-    - AI
-    - OCR
-    - DevOps
-cover_image: https://images.unsplash.com/photo-1607799279861-4dd421887fb3
+  - Flask
+  - AI
+  - OCR
+  - DevOps
+cover_image: 'https://images.unsplash.com/photo-1607799279861-4dd421887fb3'
+date: 2025-03-13 22:07:53
 ---
 
 # BEdit后端项目经历总结

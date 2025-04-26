@@ -1,14 +1,14 @@
 ---
 title: 君颖投资项目经历简介
 categories:
-  - Repos
-date: 2025-03-13 22:30:53
+  - repos
 tags:
   - React
   - Web
   - SCSS
   - GitHub Actions
   - SFTP
+date: 2025-03-13 22:30:53
 ---
 
 # 君颖投资项目经历简介

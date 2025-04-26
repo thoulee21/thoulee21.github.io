@@ -1,8 +1,7 @@
 ---
 title: Image Viewer (imgv-cmd) 项目经历总结
 categories:
-  - Repos
-date: 2025-03-13 22:29:08
+  - repos
 tags:
   - Python
   - Command Line
@@ -15,7 +14,8 @@ tags:
   - PyQRCode
   - Multiprocessing
   - argparse
-cover_image: https://images.unsplash.com/photo-1587620962725-abab7fe55159
+cover_image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159'
+date: 2025-03-13 22:29:08
 ---
 
 # ImageViewer 项目经历总结

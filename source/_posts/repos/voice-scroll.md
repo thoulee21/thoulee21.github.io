@@ -1,14 +1,14 @@
 ---
 title: Voice Scroll 提词器应用项目总结
-date: 2025-03-13 22:08:12
 categories:
-    - Repos
+  - repos
 tags:
-    - React Native
-    - Expo
-    - Speech Recognition
-    - Scroll Control
-    - Redux-Persist
+  - React Native
+  - Expo
+  - Speech Recognition
+  - Scroll Control
+  - Redux-Persist
+date: 2025-03-13 22:08:12
 ---
 
 # Voice Scroll 提词器应用项目总结

@@ -1,14 +1,14 @@
 ---
 title: Film Speak 项目经历简介
-date: 2025-03-13 22:05:18
 categories:
-    - Repos
+  - repos
 tags:
-    - React Native
-    - ffmpeg
-    - Speech Recognition
-    - MMKV
-    - Localization
+  - React Native
+  - ffmpeg
+  - Speech Recognition
+  - MMKV
+  - Localization
+date: 2025-03-13 22:05:18
 ---
 
 # Film Speak 项目经历简介

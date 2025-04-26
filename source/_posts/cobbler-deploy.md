@@ -1,8 +1,6 @@
 ---
 title: cobbler deployment practice
 date: 2025-04-24 13:29:44
-categories:
-    - Server
 tags:
     - cobbler
     - centos

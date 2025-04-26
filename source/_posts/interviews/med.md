@@ -1,12 +1,12 @@
 ---
 title: 医疗器械行业软件测试面试解析
-date: 2025-04-3 16:07:59
-categories:
-  - Interview
 tags:
   - 医疗器械
   - 测试
   - 测试用例
+categories:
+  - interviews
+date: 2025-04-03 16:07:59
 ---
 
 # Job Description

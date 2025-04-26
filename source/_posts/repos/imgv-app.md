@@ -1,8 +1,7 @@
 ---
 title: Image Viewer (imgv) 项目经历总结
 categories:
-  - Repos
-date: 2025-03-13 22:28:31
+  - repos
 tags:
   - React Native
   - TypeScript
@@ -15,6 +14,7 @@ tags:
   - React Navigation
   - Lottie
   - Sentry
+date: 2025-03-13 22:28:31
 ---
 
 # Image Viewer (imgv) 项目经历总结

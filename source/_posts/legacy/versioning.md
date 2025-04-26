@@ -1,12 +1,12 @@
 ---
-title:  语义化版本 2.0.0
-date:   2020-03-10 21:16:32
+title: 语义化版本 2.0.0
 excerpt: 语义化版本控制（Semantic Versioning）是一个版本号的命名规范，旨在帮助开发者更好地管理软件版本
 categories:
-    - Legacy
+  - legacy
 tags:
-    - coding
-    - developer
+  - coding
+  - developer
+date: 2020-03-10 21:16:32
 ---
 
 ## 摘要

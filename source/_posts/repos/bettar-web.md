@@ -1,12 +1,12 @@
 ---
 title: Bettar 项目经历简介
 categories:
-  - Repos
-date: 2025-03-13 22:12:07
+  - repos
 tags:
   - Next.js
   - React
   - Repos
+date: 2025-03-13 22:12:07
 ---
 
 # Bettar 项目经历简介

@@ -1,12 +1,12 @@
 ---
 title: Markdown 语法简介
-date: 2025-03-13 22:43:41
 categories:
-    - Legacy
+  - legacy
 tags:
-    - markdown
-    - syntax
-cover_image: https://images.unsplash.com/photo-1579262170601-1f22ea9bbfaf
+  - markdown
+  - syntax
+cover_image: 'https://images.unsplash.com/photo-1579262170601-1f22ea9bbfaf'
+date: 2025-03-13 22:43:41
 ---
 
 # 定义：

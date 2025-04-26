@@ -1,8 +1,7 @@
 ---
 title: imgv-webapp项目经历总结
 categories:
-  - Repos
-date: 2025-03-13 22:29:44
+  - repos
 tags:
   - Python
   - Flask
@@ -10,7 +9,8 @@ tags:
   - Async
   - Jinja2
   - User-Agent
-cover_image: https://images.unsplash.com/photo-1498050108023-c5249f4df085
+cover_image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085'
+date: 2025-03-13 22:29:44
 ---
 
 # imgv-webapp项目经历总结

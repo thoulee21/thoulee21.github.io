@@ -110,6 +110,15 @@ search:
   path: search.json
   field: post
 
+# Generate categories from directory-tree
+# Dependencies: https://github.com/xu-song/hexo-auto-category
+# depth: the max_depth of directory-tree you want to generate, should > 0
+# multiple: multiple category hierarchies
+auto_category:
+  enable: true
+  multiple: false
+  depth: 
+
 # Comments
 giscus: |
   <script src="https://giscus.app/client.js"

@@ -1,17 +1,17 @@
 ---
-title:  "复旦大学简介"
-date: 2020-03-10 20:48:04
-cover_image: https://i.loli.net/2019/08/18/opD8fKLMWSiXkdz.jpg
+title: 复旦大学简介
+cover_image: 'https://i.loli.net/2019/08/18/opD8fKLMWSiXkdz.jpg'
 excerpt: 复旦大学创建于1905年，原名复旦公学，是中国第一所由国人通过民间集资、自主创办的高等学校
 categories:
-    - Legacy
+  - legacy
 tags:
-    - study
-    - university
-    - Fudan
-    - Shanghai
-    - education
-    - history
+  - study
+  - university
+  - Fudan
+  - Shanghai
+  - education
+  - history
+date: 2020-03-10 20:48:04
 ---
 
 ## 简介
