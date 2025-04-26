@@ -5,8 +5,8 @@ categories:
   - Legacy
   - Python
 tags:
-  - python
-  - study
+  - Python
+  - Study
 ---
 
 # Python 列表(list) 练习题

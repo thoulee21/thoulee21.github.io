@@ -5,8 +5,8 @@ categories:
   - Legacy
   - Python
 tags:
-  - python
-  - study
+  - Python
+  - Study
 ---
 
 # Python 元组(Tuple) 练习题
