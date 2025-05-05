@@ -59,8 +59,8 @@ nav:
     Tags: /tags
     Categories: /categories
     Archives: /archives
-    ImgvWeb: http://thou.japaneast.cloudapp.azure.com:5080/imgv
-    InterGO: http://thou.japaneast.cloudapp.azure.com/
+    ImgvWeb: http://thou.japaneast.cloudapp.azure.com:5000/imgv
+    InterGo: https://interview-ai-8w3.pages.dev/
     # Friends: /friends
     # Projects: /projects
     # About: /about
