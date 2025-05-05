@@ -59,7 +59,7 @@ nav:
     Tags: /tags
     Categories: /categories
     Archives: /archives
-    ImgvWeb: http://thou.japaneast.cloudapp.azure.com:5000/imgv
+    ImgvWeb: http://thou.japaneast.cloudapp.azure.com:5080/imgv
     # Friends: /friends
     # Projects: /projects
     # About: /about
