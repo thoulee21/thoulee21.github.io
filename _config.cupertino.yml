@@ -59,7 +59,6 @@ nav:
     Tags: /tags
     Categories: /categories
     Archives: /archives
-    ImgvWeb: http://thou.japaneast.cloudapp.azure.com:5000/imgv
     InterGo: https://interview-ai-8w3.pages.dev/
     # Friends: /friends
     # Projects: /projects
@@ -88,6 +87,8 @@ footer:
   Projects:
     Joint Player: https://github.com/thoulee21/joint-player
     Film Speak: https://github.com/thoulee21/film-speak
+    InterGo Dev: https://dev.interview-ai-8w3.pages.dev/
+    ImgvWeb: http://thou.japaneast.cloudapp.azure.com:5000/imgv
   Me:
     GitHub: https://github.com/thoulee21
     # CodePen: https://codepen.io/mrwillcom
